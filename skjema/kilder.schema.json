@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kildene",
+  "type": "object",
+  "required": ["hovedside", "kilder"],
+  "additionalProperties": false,
+  "properties": {
+    "hovedside": {"type": "string", "format": "uri"},
+    "kilder": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "kortnavn", "type", "tittel", "utgiver", "tilgjengelig"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "kortnavn": {"type": "string"},
+          "type": {"enum": ["rapport", "sporreskjema", "datafil"]},
+          "tittel": {"type": "string"},
+          "utgiver": {"type": "string"},
+          "aar": {"type": "integer"},
+          "tilgjengelig": {"type": "string"},
+          "merknad": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

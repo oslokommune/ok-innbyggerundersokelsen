@@ -1,0 +1,181 @@
+# Dommene om sammenlignbarhet: kan tallene for et konsept sammenlignes fra én utgave til
+# den neste?
+#
+# Hva som er endret i ordlyd og svaralternativer, utledes av verktøyet fra
+# data/skjema/<utgave>.yaml og lagres ikke her. Det som lagres, er dommen og begrunnelsen.
+#
+#   ja             – kan sammenlignes
+#   med_forbehold  – kan sammenlignes, men en endring kan ha påvirket tallene
+#   nei            – måler ikke det samme; serien er brutt
+#
+# Prinsipp: en endring som gjelder alle spørsmål (målgruppe, metode) gir med_forbehold på
+# hvert spørsmål, slik at forbeholdet står der tallet står. «nei» brukes når spørsmålet
+# måler noe annet. «Ikke sikker» regnes som manglende svar i alle utgaver, som i
+# rapportene, så ulik koding av «Ikke sikker» påvirker ikke tallene.
+
+formatversjon: 1
+
+vurderinger:
+  # --- trives_oslo ---------------------------------------------------------------------
+  - konsept: trives_oslo
+    fra_utgave: "2007"
+    til_utgave: "2010"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      Spørsmålsformen ble endret fra «Hvordan trives du i Oslo?» til «I hvilken grad …
+      Trives du i Oslo?». Skalaen og endepunktene er de samme, og meningsinnholdet er i
+      praksis det samme. Målgruppen ble utvidet fra 15–80 år til 15 år og eldre.
+    grunnlag:
+      - {id: skjema-2007, side: "1"}
+      - {id: skjema-2010, side: "2"}
+      - {id: rapport-2007, side: "3"}
+      - {id: rapport-2010, side: "4"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trives_oslo
+    fra_utgave: "2010"
+    til_utgave: "2014"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      Ordlyden og skalaen er de samme, men målgruppen ble endret fra 15 år og eldre til 18 år
+      og eldre, så populasjonen er ikke den samme. Skjemaet ble samtidig kraftig forkortet, og
+      feltarbeidet flyttet fra høst til vinter.
+    grunnlag:
+      - {id: rapport-2010, side: "4"}
+      - {id: rapport-2014, side: "3"}
+      - {id: rapport-2018, side: "5"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trives_oslo
+    fra_utgave: "2014"
+    til_utgave: "2018"
+    sammenlignbar: ja
+    begrunnelse: >-
+      Samme spørsmål og skala. Innledningen ble forkortet til «I hvilken grad:», med samme
+      mening. Andelen som svarte på nett økte fra 15 til 48 prosent, men innsamlingen var den
+      samme som før: alle fikk papirskjemaet i posten og valgte selv om de ville svare på papir
+      eller nett, og spørsmålet var likt i papir- og nettskjemaet. Rapporten for 2018 sier at
+      datainnsamlingsmetode og vekting var lik tidligere år. Feltarbeidet flyttet fra vinter til
+      vår; årstiden vurderes som lite relevant for trivsel i byen. Samlet gir dette ikke grunn
+      til forbehold.
+    grunnlag:
+      - {id: rapport-2014, side: "3–4"}
+      - {id: rapport-2018, side: "5–6, 10, 114"}
+      - {id: nettskjema-2018, side: null}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trives_oslo
+    fra_utgave: "2018"
+    til_utgave: "2023"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      Omleggingen i 2023: undersøkelsen ble i hovedsak en nettundersøkelse med invitasjon på
+      e-post, utvalget ble trukket og vektet etter landbakgrunn, og innvandrere med under fem
+      års botid var ikke med. Ordlyden og skalaen er de samme. Rapporten for 2023 konkluderer
+      med at metodeendringen kan ha påvirket resultatene. Dette spørsmålet er et av dem der de to
+      utvalgene i 2023 skilte seg: i det lille utvalget som fikk skjemaet i posten som før, svarte
+      83 prosent 5 eller 6, mot 76 prosent i det digitale hovedutvalget. Det er to utvalg samme
+      år, ikke en endring over tid, og utvalgene hadde ulik alderssammensetning.
+    grunnlag:
+      - {id: rapport-2023, side: "4, 7, 12, 19–21"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trives_oslo
+    fra_utgave: "2023"
+    til_utgave: "2026"
+    sammenlignbar: ja
+    begrunnelse: >-
+      Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med
+      invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren.
+      Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. I 2026 var
+      undersøkelsen bare på nett, der 2023 hadde et lite postalt utvalg i tillegg;
+      kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret, og vektingen ble gjort
+      med celler og raking. Svarprosenten er regnet på en ny måte, men det endrer ikke hvem som
+      svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i
+      utvalget. Samlet gir dette ikke grunn til forbehold. Innledningen står som «Hvilken
+      grad:» i metoderapporten for 2026, uten «I»; se merknaden til spørreskjemaet for 2026.
+    grunnlag:
+      - {id: rapport-2023, side: "4, 7, 12"}
+      - {id: metoderapport-2026, side: "1–4, 7, 15"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  # --- trygghet_kveld_der_du_bor -------------------------------------------------------
+  - konsept: trygghet_kveld_der_du_bor
+    fra_utgave: "2007"
+    til_utgave: "2010"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      Ordlyden, batteriet og skalaen er de samme. Målgruppen ble utvidet fra 15–80 år til 15 år
+      og eldre. Endringen gjelder alle spørsmål og vises derfor også her. Feltarbeidet var om
+      høsten begge år.
+    grunnlag:
+      - {id: skjema-2007, side: "5"}
+      - {id: skjema-2010, side: "5"}
+      - {id: rapport-2007, side: "3"}
+      - {id: rapport-2010, side: "4"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trygghet_kveld_der_du_bor
+    fra_utgave: "2010"
+    til_utgave: "2014"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      Ordlyden, batteriet (med linjene om politiets innsats) og skalaen er de samme. Målgruppen
+      ble endret til 18 år og eldre. Feltarbeidet flyttet fra høst til vinter; begge årstider
+      har mørke kvelder.
+    grunnlag:
+      - {id: skjema-2010, side: "5"}
+      - {id: rapport-2010, side: "4"}
+      - {id: rapport-2014, side: "3, 64"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trygghet_kveld_der_du_bor
+    fra_utgave: "2014"
+    til_utgave: "2018"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      «der du bor» ble flyttet fra en underoverskrift inn i linjeteksten, og linjene om
+      politiets innsats ble tatt ut av batteriet. Meningen er den samme, men sammenhengen i
+      skjemaet er en annen. Feltarbeidet flyttet fra januar–mars til mars–mai, altså fra mørke
+      til lysere kvelder. Hvilken betydning det har, er ikke målt.
+    grunnlag:
+      - {id: rapport-2014, side: "3, 64"}
+      - {id: rapport-2018, side: "5, 115"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trygghet_kveld_der_du_bor
+    fra_utgave: "2018"
+    til_utgave: "2023"
+    sammenlignbar: med_forbehold
+    begrunnelse: >-
+      Omleggingen i 2023, som for trivsel. Ordlyden og skalaen er de samme, og feltarbeidet var
+      om våren begge år. Rapporten for 2023 ber om varsomhet ved sammenligning over tid.
+    grunnlag:
+      - {id: rapport-2023, side: "4, 7, 12, 18, 21"}
+    besluttet_av: FIN
+    dato: 2026-09-23
+
+  - konsept: trygghet_kveld_der_du_bor
+    fra_utgave: "2023"
+    til_utgave: "2026"
+    sammenlignbar: ja
+    begrunnelse: >-
+      Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med
+      invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren.
+      Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene.
+      Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte.
+      Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget.
+      Samlet gir dette ikke grunn til forbehold.
+    grunnlag:
+      - {id: rapport-2023, side: "4, 7, 12"}
+      - {id: metoderapport-2026, side: "1–4, 7, 20"}
+    besluttet_av: FIN
+    dato: 2026-09-23

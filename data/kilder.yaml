@@ -1,0 +1,109 @@
+# Kildene som data/ viser til.
+#
+# Hver påstand i data/ har en kilde (id herfra) og en side. Sidetallet er sidenummeret i
+# PDF-fila, som kan avvike med én side fra det trykte sidetallet.
+#
+# Lenker: rapportene ligger på undersøkelsens hovedside. Vi lenker bare dit, ikke til
+# enkeltfiler, fordi filadressene endrer seg.
+
+hovedside: https://www.oslo.kommune.no/statistikk/innbyggerundersokelsen/
+
+kilder:
+  - id: rapport-2004
+    kortnavn: Rapport 2004
+    type: rapport
+    tittel: Publikums- og brukerundersøkelse 2004
+    utgiver: MMI Univero for Oslo kommune, Utviklings- og kompetanseetaten
+    aar: 2004
+    tilgjengelig: ikke på hovedsiden
+    merknad: Rapporten har ingen tittelside. Tittelen er beskrivende, etter innledningen (s. 3).
+
+  - id: rapport-2007
+    kortnavn: Rapport 2007
+    type: rapport
+    tittel: Publikumsundersøkelsen 2007. Hovedrapport
+    utgiver: Synovate Norge for Oslo kommune, Utviklings- og kompetanseetaten
+    aar: 2007
+    tilgjengelig: på hovedsiden
+
+  - id: rapport-2010
+    kortnavn: Rapport 2010
+    type: rapport
+    tittel: Publikumsundersøkelsen 2010. Hovedrapport
+    utgiver: TNS Gallup for Oslo kommune, Utviklings- og kompetanseetaten
+    aar: 2010
+    tilgjengelig: på hovedsiden
+
+  - id: rapport-2014
+    kortnavn: Rapport 2014
+    type: rapport
+    tittel: Publikumsundersøkelsen 2014
+    utgiver: Sentio Research Norge for Oslo kommune
+    aar: 2014
+    tilgjengelig: på hovedsiden
+
+  - id: rapport-2018
+    kortnavn: Rapport 2018
+    type: rapport
+    tittel: Publikumsundersøkelsen 2018. Rapport, september 2018
+    utgiver: Kantar TNS for Oslo kommune
+    aar: 2018
+    tilgjengelig: på hovedsiden
+
+  - id: rapport-2023
+    kortnavn: Rapport 2023
+    type: rapport
+    tittel: Oslo kommunes Innbyggerundersøkelse 2023
+    utgiver: Kantar Public for Oslo kommune
+    aar: 2023
+    tilgjengelig: på hovedsiden
+    merknad: Kantar Public heter nå Verian.
+
+  - id: metoderapport-2026
+    kortnavn: Metoderapport 2026
+    type: rapport
+    tittel: Metoderapport – Innbyggerundersøkelsen 2026
+    utgiver: Opinion for Oslo kommune
+    aar: 2026
+    tilgjengelig: på hovedsiden
+    merknad: >-
+      Dokumentet kaller seg «Dokumentasjonsnotat» på første side, men er publisert som
+      metoderapport. Spørreskjemaet står i vedlegg 3 (s. 15–39).
+
+  - id: skjema-2007
+    kortnavn: Spørreskjema 2007
+    type: sporreskjema
+    tittel: Spørreskjema 2007
+    utgiver: Oslo kommune
+    aar: 2007
+    tilgjengelig: ikke publisert; kan fås ved henvendelse til oslostatistikken@byr.oslo.kommune.no
+    merknad: Papirskjemaet slik det ble sendt ut. Skjemaet er ikke vedlagt rapporten for 2007.
+
+  - id: skjema-2010
+    kortnavn: Spørreskjema 2010
+    type: sporreskjema
+    tittel: Spørreskjema 2010
+    utgiver: Oslo kommune
+    aar: 2010
+    tilgjengelig: ikke publisert; kan fås ved henvendelse til oslostatistikken@byr.oslo.kommune.no
+    merknad: Papirskjemaet slik det ble sendt ut. Rapporten for 2010 viser til skjemaet som vedlegg, men vedlegget er ikke med i den publiserte fila.
+
+  - id: nettskjema-2018
+    kortnavn: Nettskjema 2018
+    type: sporreskjema
+    tittel: Nettskjema 2018
+    utgiver: Oslo kommune
+    aar: 2018
+    tilgjengelig: ikke publisert; kan fås ved henvendelse til oslostatistikken@byr.oslo.kommune.no
+    merknad: Den programmerte versjonen av skjemaet for dem som svarte på nett. Papirskjemaet står i rapporten for 2018 (s. 113–119).
+
+  - id: datafil
+    kortnavn: Datafila
+    type: datafil
+    tittel: Leverandørens datafil for utgaven
+    utgiver: Oslo kommune
+    tilgjengelig: ikke publisert
+    merknad: >-
+      Variabelnavn og koder er hentet fra metadataene i datafila (variabelnavn, etiketter og
+      kodelister). For 2007 og 2010 er det i tillegg talt opp hvilke koder som forekommer.
+      Datafilene inneholder svar fra enkeltpersoner og publiseres ikke.

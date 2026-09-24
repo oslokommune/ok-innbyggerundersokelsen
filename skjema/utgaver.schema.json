@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Metoden for hver utgave",
+  "type": "object",
+  "required": ["formatversjon", "tidsmetode_serie", "historikk", "utgaver"],
+  "additionalProperties": false,
+  "$defs": {
+    "kilderef": {
+      "type": "object",
+      "required": ["id", "side"],
+      "additionalProperties": false,
+      "properties": {"id": {"type": "string"}, "side": {"type": ["string", "null"]}}
+    },
+    "kilde": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/kilderef"}]},
+    "beskrevet": {
+      "type": "object",
+      "required": ["beskrivelse", "kilde"],
+      "additionalProperties": false,
+      "properties": {"beskrivelse": {"type": "string"}, "kilde": {"$ref": "#/$defs/kilde"}}
+    },
+    "dato": {"oneOf": [{"type": "null"}, {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}]}
+  },
+  "properties": {
+    "formatversjon": {"const": 1},
+    "tidsmetode_serie": {"const": "Longitudinal.TrendRepeatedCrossSection"},
+    "historikk": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["aar", "beskrivelse", "kilde"],
+        "additionalProperties": false,
+        "properties": {
+          "aar": {"type": "integer"},
+          "beskrivelse": {"type": "string"},
+          "kilde": {"$ref": "#/$defs/kilderef"}
+        }
+      }
+    },
+    "utgaver": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "aar", "navn", "sporreskjema", "oppdrag", "malgruppe", "analyseenhet", "tidsmetode",
+                     "utvalgsramme", "utvalgsdesign", "innsamling", "kontakt", "sprak", "feltperiode", "svar",
+                     "vekting", "landbakgrunn", "skjemaendring", "sammenligner_med"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[0-9]{4}$"},
+          "aar": {"type": "integer"},
+          "navn": {"type": "string"},
+          "sporreskjema": {"$ref": "#/$defs/kilde"},
+          "sporreskjema_merknad": {"type": "string"},
+          "oppdrag": {
+            "type": "object",
+            "required": ["oppdragsgiver", "leverandor", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "oppdragsgiver": {"type": "string"},
+              "leverandor": {"type": "string"},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "malgruppe": {
+            "type": "object",
+            "required": ["beskrivelse", "alder_fra", "alder_til", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "beskrivelse": {"type": "string"},
+              "alder_fra": {"type": "integer"},
+              "alder_til": {"type": ["integer", "null"]},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "analyseenhet": {"const": "Individual"},
+          "tidsmetode": {"const": "CrossSection"},
+          "utvalgsramme": {"$ref": "#/$defs/beskrevet"},
+          "utvalgsdesign": {
+            "type": "object",
+            "required": ["type", "beskrivelse", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {"enum": ["Probability", "Probability.SimpleRandom", "Probability.SystematicRandom",
+                                "Probability.Stratified", "Probability.Stratified.Proportional",
+                                "Probability.Stratified.Disproportional", "Probability.Cluster",
+                                "Probability.Multistage", "NonProbability", "MixedProbabilityNonprobability", "Other"]},
+              "beskrivelse": {"type": "string"},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "innsamling": {
+            "type": "object",
+            "required": ["beskrivelse", "modus", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "beskrivelse": {"type": "string"},
+              "modus": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": ["kode", "antall"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "kode": {"enum": ["SelfAdministeredQuestionnaire.Paper", "SelfAdministeredQuestionnaire.CAWI",
+                                      "Interview.Telephone.CATI", "Interview.FaceToFace.CAPIorCAMI"]},
+                    "antall": {"type": ["integer", "null"], "minimum": 0},
+                    "merknad": {"type": "string"}
+                  }
+                }
+              },
+              "merknad": {"type": "string"},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "kontakt": {"$ref": "#/$defs/beskrevet"},
+          "sprak": {"$ref": "#/$defs/beskrevet"},
+          "feltperiode": {
+            "type": "object",
+            "required": ["fra", "til", "beskrivelse", "arstid", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "fra": {"$ref": "#/$defs/dato"},
+              "til": {"$ref": "#/$defs/dato"},
+              "beskrivelse": {"type": ["string", "null"]},
+              "arstid": {"enum": ["vinter", "vår", "sommer", "høst"]},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "svar": {
+            "type": "object",
+            "required": ["bruttoutvalg", "nettoutvalg", "svarprosent", "beregning", "nettoutvalg_merknad", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "bruttoutvalg": {"type": "integer", "minimum": 1},
+              "nettoutvalg": {"type": "integer", "minimum": 1},
+              "svarprosent": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+              "beregning": {"type": "string"},
+              "nettoutvalg_merknad": {"type": ["string", "null"]},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "vekting": {
+            "type": "object",
+            "required": ["variabler", "beskrivelse", "vektvariabel", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "variabler": {"type": "array", "items": {"enum": ["kjønn", "alder", "bydel", "landbakgrunn"]}},
+              "beskrivelse": {"type": "string"},
+              "vektvariabel": {
+                "oneOf": [
+                  {"type": "null"},
+                  {"type": "object", "required": ["navn", "kilde"], "additionalProperties": false,
+                   "properties": {"navn": {"type": "string"}, "kilde": {"$ref": "#/$defs/kilderef"}}}
+                ]
+              },
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "landbakgrunn": {
+            "type": "object",
+            "required": ["type", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {"enum": ["selvrapportert", "register", "ikke_oppgitt"]},
+              "beskrivelse": {"type": "string"},
+              "kilde": {"$ref": "#/$defs/kilde"}
+            }
+          },
+          "skjemaendring": {
+            "type": "object",
+            "required": ["beskrivelse", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "beskrivelse": {"type": "string"},
+              "kilde": {"$ref": "#/$defs/kilderef"},
+              "kilde_tillegg": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "sammenligner_med": {
+            "type": "object",
+            "required": ["utgaver", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "utgaver": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{4}$"}},
+              "merknad": {"type": "string"},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+# Spørreskjemaet for 2014: spørsmålene som er dokumentert i denne versjonen.
+#
+# Ordlyden er skrevet av fra spørreskjemaet, tegn for tegn, med skrivemåten i kilden.
+# Svaralternativene står i skjemaets rekkefølge. `kode` er koden som står trykt eller
+# programmert i skjemaet (null = ingen kode i skjemaet). `datafil` er variabelen og
+# kodingen i leverandørens datafil for utgaven.
+
+formatversjon: 1
+utgave: "2014"
+sporreskjema: rapport-2014
+
+sporsmal:
+  - konsept: trives_oslo
+    skjema_nr: "5"
+    ledd_nr: "1"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "Først vil vi stille noen spørsmål knyttet til din vurdering av OSLO SOM BY Å BO I. I hvilken grad..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Trives du i Oslo"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "62"}
+    merknad: null
+    datafil:
+      variabel: "Q5_1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Kode −111 «[Ingen svar]» har etikett i fila, men brukes ikke. Ubesvart er tomt. En kode 0
+        uten etikett forekommer i færre enn 20 svar per spørsmål, og regnes som manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_kveld_der_du_bor
+    skjema_nr: "12"
+    ledd_nr: "2"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "..der du bor"
+      - "Hvor fornøyd/misfornøyd er du med..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på kveldstid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "64"}
+    merknad: null
+    datafil:
+      variabel: "Q12_2"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Kode −111 «[Ingen svar]» har etikett i fila, men brukes ikke. Ubesvart er tomt. En kode 0
+        uten etikett forekommer i færre enn 20 svar per spørsmål, og regnes som manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}

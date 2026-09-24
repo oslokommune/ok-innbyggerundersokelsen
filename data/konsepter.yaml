@@ -1,0 +1,38 @@
+# Konseptene: det et spørsmål måler, uavhengig av ordlyd og variabelnavn.
+#
+# Id-en beskriver det som måles og endres aldri. Endrer et spørsmål mening, får det en ny
+# id. Deles eller slås et spørsmål sammen, føres det som en kobling mellom konseptene.
+# Leverandørenes variabelnavn står per utgave i data/skjema/<utgave>.yaml.
+
+formatversjon: 1
+
+konsepter:
+  - id: trives_oslo
+    navn: Trivsel i Oslo
+    beskrivelse: >-
+      Hvor godt man trives i Oslo, på en skala fra 1 (i svært liten grad) til 6 (i svært stor
+      grad).
+    tema: Oslo som by å bo i
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på
+      e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett.
+      Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023
+      konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra
+      2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og
+      sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+  - id: trygghet_kveld_der_du_bor
+    navn: Trygghet ute på kveldstid der du bor
+    beskrivelse: >-
+      Hvor fornøyd man er med tryggheten når det gjelder å ferdes ute på kveldstid i området
+      der man bor, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
+    tema: Trygghet
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på
+      e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett.
+      Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023
+      konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra
+      2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og
+      sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen

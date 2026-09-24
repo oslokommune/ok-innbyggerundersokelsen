@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Spørreskjemaet for én utgave",
+  "type": "object",
+  "required": ["formatversjon", "utgave", "sporreskjema", "sporsmal"],
+  "additionalProperties": false,
+  "$defs": {
+    "kilderef": {
+      "type": "object",
+      "required": ["id", "side"],
+      "additionalProperties": false,
+      "properties": {"id": {"type": "string"}, "side": {"type": ["string", "null"]}}
+    },
+    "tekst": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "string", "minLength": 1},
+        {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      ]
+    },
+    "svaralternativer": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["kode", "tekst"],
+        "additionalProperties": false,
+        "properties": {
+          "kode": {"type": ["integer", "null"]},
+          "tekst": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "svartype": {"enum": ["skala", "enkeltvalg", "flervalg", "ja_nei", "tall", "fritekst"]}
+  },
+  "properties": {
+    "formatversjon": {"const": 1},
+    "utgave": {"type": "string", "pattern": "^[0-9]{4}$"},
+    "sporreskjema": {"type": "string"},
+    "sporsmal": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["konsept", "skjema_nr", "ledd_nr", "seksjon", "innledning", "instruksjon", "ledd_tekst", "svartype", "svaralternativer", "filter", "kilde", "merknad", "datafil"],
+        "additionalProperties": false,
+        "properties": {
+          "konsept": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "skjema_nr": {"type": "string"},
+          "ledd_nr": {"type": ["string", "null"]},
+          "seksjon": {"type": ["string", "null"]},
+          "innledning": {"$ref": "#/$defs/tekst"},
+          "instruksjon": {"$ref": "#/$defs/tekst"},
+          "ledd_tekst": {"type": ["string", "null"]},
+          "svartype": {"$ref": "#/$defs/svartype"},
+          "svaralternativer": {"$ref": "#/$defs/svaralternativer"},
+          "filter": {"type": ["string", "null"]},
+          "kilde": {"$ref": "#/$defs/kilderef"},
+          "merknad": {"type": ["string", "null"]},
+          "datafil": {
+            "type": "object",
+            "required": ["variabel", "koder", "ikke_sikker_kode", "manglende", "merknad", "kontrollert", "kilde"],
+            "additionalProperties": false,
+            "properties": {
+              "variabel": {"type": "string", "minLength": 1},
+              "koder": {"type": ["array", "null"], "items": {"type": "integer"}},
+              "ikke_sikker_kode": {"type": ["integer", "null"]},
+              "manglende": {"oneOf": [
+                {"enum": ["tom", null]},
+                {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"oneOf": [{"type": "integer"}, {"const": "tom"}]}}
+              ]},
+              "merknad": {"type": ["string", "null"]},
+              "kontrollert": {"type": "boolean"},
+              "kilde": {"$ref": "#/$defs/kilderef"}
+            }
+          },
+          "varianter": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["navn", "beskrivelse", "skjema_nr", "ledd_nr", "innledning", "ledd_tekst", "svartype", "svaralternativer", "kilde"],
+              "additionalProperties": false,
+              "properties": {
+                "navn": {"type": "string"},
+                "beskrivelse": {"type": "string"},
+                "skjema_nr": {"type": "string"},
+                "ledd_nr": {"type": ["string", "null"]},
+                "seksjon": {"type": ["string", "null"]},
+                "innledning": {"$ref": "#/$defs/tekst"},
+                "ledd_tekst": {"type": ["string", "null"]},
+                "svartype": {"$ref": "#/$defs/svartype"},
+                "svaralternativer": {"$ref": "#/$defs/svaralternativer"},
+                "kilde": {"$ref": "#/$defs/kilderef"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

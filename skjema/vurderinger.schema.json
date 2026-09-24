@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dommene om sammenlignbarhet",
+  "type": "object",
+  "required": ["formatversjon", "vurderinger"],
+  "additionalProperties": false,
+  "$defs": {
+    "kilderef": {
+      "type": "object",
+      "required": ["id", "side"],
+      "additionalProperties": false,
+      "properties": {"id": {"type": "string"}, "side": {"type": ["string", "null"]}}
+    }
+  },
+  "properties": {
+    "formatversjon": {"const": 1},
+    "vurderinger": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["konsept", "fra_utgave", "til_utgave", "sammenlignbar", "begrunnelse", "grunnlag", "besluttet_av", "dato"],
+        "additionalProperties": false,
+        "properties": {
+          "konsept": {"type": "string"},
+          "fra_utgave": {"type": "string"},
+          "til_utgave": {"type": "string"},
+          "sammenlignbar": {"enum": ["ja", "med_forbehold", "nei"]},
+          "begrunnelse": {"type": "string", "minLength": 20},
+          "grunnlag": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/kilderef"}},
+          "besluttet_av": {"const": "FIN"},
+          "dato": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+        }
+      }
+    }
+  }
+}

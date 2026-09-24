@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+
+      - name: Valider data/ mot skjema/
+        run: python verktoy/validering.py --streng
+
+      - name: docs/ må være i takt med data/
+        run: python verktoy/generer_docs.py --sjekk
+
+      - name: Tester
+        run: python -m pytest tests -q
+
+      # Siste sperre mot datafiler i et offentlig repo. .gitignore stopper dem normalt,
+      # men `git add -f` går forbi; dette gjør ikke det.
+      - name: Ingen datafiler i treet
+        run: |
+          treff=$(git ls-files | grep -Ei '\.(sav|zsav|por|dta|sas7bdat|xpt|rds|parquet|xlsx?|csv)$' || true)
+          if [ -n "$treff" ]; then
+            echo "Datafiler funnet i repoet:"; echo "$treff"; exit 1
+          fi
+          echo "Ingen datafiler i treet."

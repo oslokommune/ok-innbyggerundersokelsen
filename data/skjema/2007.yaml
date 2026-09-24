@@ -1,0 +1,76 @@
+# Spørreskjemaet for 2007: spørsmålene som er dokumentert i denne versjonen.
+#
+# Ordlyden er skrevet av fra spørreskjemaet, tegn for tegn, med skrivemåten i kilden.
+# Svaralternativene står i skjemaets rekkefølge. `kode` er koden som står trykt eller
+# programmert i skjemaet (null = ingen kode i skjemaet). `datafil` er variabelen og
+# kodingen i leverandørens datafil for utgaven.
+
+formatversjon: 1
+utgave: "2007"
+sporreskjema: skjema-2007
+
+sporsmal:
+  - konsept: trives_oslo
+    skjema_nr: "10"
+    ledd_nr: "1"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "Først vil vi komme med noen spørsmål knyttet til din vurdering av OSLO SOM BY Å BO I."
+    instruksjon: "Vi ber deg svare langs en skala fra 1 til 6, der 1 betyr i svært liten grad, og 6 betyr i svært stor grad."
+    ledd_tekst: "Hvordan trives du i Oslo?"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: 7, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: skjema-2007, side: "1"}
+    merknad: null
+    datafil:
+      variabel: "Q12_1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har
+        etikett i fila, men forekommer ikke. Svar uten gyldig verdi er tomme, så «Ikke sikker»
+        kan ikke skilles fra ubesvart.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_kveld_der_du_bor
+    skjema_nr: "16"
+    ledd_nr: "6"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "Hvor fornøyd eller misfornøyd er du med. . . ?"
+      - "....der du bor"
+    instruksjon:
+      - "NÅ SKAL VI STILLE NOEN MER DETALJERTE SPØRSMÅL OM ULIKE TEMA."
+      - "For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd."
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på kveldstid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: 7, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: skjema-2007, side: "5"}
+    merknad: null
+    datafil:
+      variabel: "Q19_6"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har
+        etikett i fila, men forekommer ikke. Svar uten gyldig verdi er tomme, så «Ikke sikker»
+        kan ikke skilles fra ubesvart.
+      kontrollert: true
+      kilde: {id: datafil, side: null}

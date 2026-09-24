@@ -1,0 +1,68 @@
+# Spørreskjemaet for 2026: spørsmålene som er dokumentert i denne versjonen.
+#
+# Ordlyden er skrevet av fra spørreskjemaet, tegn for tegn, med skrivemåten i kilden.
+# Svaralternativene står i skjemaets rekkefølge. `kode` er koden som står trykt eller
+# programmert i skjemaet (null = ingen kode i skjemaet). `datafil` er variabelen og
+# kodingen i leverandørens datafil for utgaven.
+
+formatversjon: 1
+utgave: "2026"
+sporreskjema: metoderapport-2026
+
+sporsmal:
+  - konsept: trives_oslo
+    skjema_nr: "Q001"
+    ledd_nr: "r1"
+    seksjon: "Først noen spørsmål om hvordan det oppleves å være innbygger i Oslo."
+    innledning: "Hvilken grad:"
+    instruksjon: "Svar på en skala fra 1-6 der 1 er i svært liten grad og 6 er i svært stor grad"
+    ledd_tekst: "Trives du i Oslo?"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "1 - I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "6 - I svært stor grad"}
+      - {kode: 98, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: metoderapport-2026, side: "15"}
+    merknad: >-
+      Innledningen står som «Hvilken grad:» i metoderapporten og i variabeletiketten i
+      datafila. Metoderapporten viser ikke hvordan teksten så ut for respondentene.
+    datafil:
+      variabel: "Q001r1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 98
+      manglende: tom
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_kveld_der_du_bor
+    skjema_nr: "Q004"
+    ledd_nr: "r4"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: "Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på kveldstid der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "1 - Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "6 - Svært fornøyd"}
+      - {kode: 98, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: metoderapport-2026, side: "20"}
+    merknad: null
+    datafil:
+      variabel: "Q004r4"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 98
+      manglende: tom
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}

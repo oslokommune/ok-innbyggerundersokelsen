@@ -1,0 +1,69 @@
+# Spørreskjemaet for 2023: spørsmålene som er dokumentert i denne versjonen.
+#
+# Ordlyden er skrevet av fra spørreskjemaet, tegn for tegn, med skrivemåten i kilden.
+# Svaralternativene står i skjemaets rekkefølge. `kode` er koden som står trykt eller
+# programmert i skjemaet (null = ingen kode i skjemaet). `datafil` er variabelen og
+# kodingen i leverandørens datafil for utgaven.
+
+formatversjon: 1
+utgave: "2023"
+sporreskjema: rapport-2023
+
+sporsmal:
+  - konsept: trives_oslo
+    skjema_nr: "Q001"
+    ledd_nr: "1"
+    seksjon: "Først noen spørsmål om hvordan det oppleves å være innbygger i Oslo"
+    innledning: "I hvilken grad:"
+    instruksjon: null
+    ledd_tekst: "Trives du i Oslo?"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "87"}
+    merknad: null
+    datafil:
+      variabel: "Q001#1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        9996 (na) er deklarert som manglende verdi i datafila. Noen få svar er i tillegg tomme.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_kveld_der_du_bor
+    skjema_nr: "Q004"
+    ledd_nr: "4"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: null
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på kveldstid der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "91"}
+    merknad: null
+    datafil:
+      variabel: "Q004#4"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        9996 (na) er ikke deklarert som manglende verdi i datafila, i motsetning til på
+        trivselsspørsmålet. Noen svar er i tillegg tomme.
+      kontrollert: true
+      kilde: {id: datafil, side: null}

@@ -1,0 +1,555 @@
+# Metoden for hver utgave, i ett felles system.
+#
+# Feltene er de samme for alle utgaver, slik at forskjellene kan leses felt for felt.
+# Hvert felt har en kilde (id i data/kilder.yaml) og en side. Står det «ikke oppgitt», er
+# opplysningen ikke funnet i kilden.
+#
+# Koder:
+#   utvalgsdesign.type  – DDI SamplingProcedure 2.0
+#   innsamling.modus    – DDI ModeOfCollection 5.0, én post per modus, med antall svar
+#   analyseenhet        – DDI AnalysisUnit
+#   tidsmetode          – DDI TimeMethod (serien som helhet: Longitudinal.TrendRepeatedCrossSection)
+#
+# Svarprosentene kan ikke stilles opp som en serie. Se feltet svar.beregning og
+# docs/SAMMENLIGNBARHET-OVER-TID.md.
+
+formatversjon: 1
+
+tidsmetode_serie: Longitudinal.TrendRepeatedCrossSection
+
+historikk:
+  - aar: 1998
+    beskrivelse: >-
+      Deltakerne ble rekruttert på telefon på forhånd, og svarprosenten er oppgitt til 67. Den
+      er regnet av dem som sa ja på telefon.
+    kilde: {id: rapport-2007, side: "3"}
+  - aar: 2001
+    beskrivelse: >-
+      Deltakerne ble rekruttert på telefon på forhånd, og svarprosenten er oppgitt til 70.
+      Regnet av alle som ble kontaktet på telefon, var svarprosenten om lag 33,3.
+    kilde: {id: rapport-2007, side: "3"}
+
+utgaver:
+  - id: "2004"
+    aar: 2004
+    navn: Publikums- og brukerundersøkelsen
+    sporreskjema: null
+    sporreskjema_merknad: >-
+      Spørreskjemaet for 2004 er ikke tilgjengelig. Rapporten gjengir bare korte
+      spørsmålstekster i figurene.
+    oppdrag:
+      oppdragsgiver: Oslo kommune, Utviklings- og kompetanseetaten (UKE)
+      leverandor: MMI Univero
+      kilde: {id: rapport-2004, side: "3"}
+    malgruppe:
+      beskrivelse: Innbyggere i Oslo, 15 år og eldre
+      alder_fra: 15
+      alder_til: null
+      kilde: {id: rapport-2004, side: "3"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: Folkeregisteret. Skjemaet ble sendt i posten.
+      kilde: {id: rapport-2004, side: "3"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: Like mange i hver bydel, 974 utsendelser i hver av de 15 bydelene.
+      kilde: {id: rapport-2004, side: "3"}
+    innsamling:
+      beskrivelse: Papirskjema i posten, med mulighet for å svare på nett.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.Paper, antall: 6060}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 237}
+      kilde: {id: rapport-2004, side: "3"}
+    kontakt:
+      beskrivelse: En purring.
+      kilde: {id: rapport-2004, side: "3"}
+    sprak:
+      beskrivelse: >-
+        Ikke oppgitt i rapporten. Rapporten for 2007 sier at følgebrev på andre språk var et
+        nytt tiltak det året.
+      kilde: {id: rapport-2007, side: "7"}
+    feltperiode:
+      fra: 2004-11-01
+      til: null
+      beskrivelse: Fra 1. november 2004 «og ut året».
+      arstid: høst
+      kilde: {id: rapport-2004, side: "3"}
+    svar:
+      bruttoutvalg: 14610
+      nettoutvalg: 6297
+      svarprosent: 45
+      beregning: >-
+        Ikke oppgitt. 637 skjemaer kom i retur på grunn av ukjent adresse. Regnet av utsendte
+        minus retur blir svarprosenten 45,1.
+      nettoutvalg_merknad: null
+      kilde: {id: rapport-2004, side: "3"}
+    vekting:
+      variabler: [kjønn, alder, bydel]
+      beskrivelse: Vektet etter kjønn og alder i hver bydel.
+      vektvariabel: null
+      kilde: {id: rapport-2004, side: "5"}
+    landbakgrunn:
+      type: selvrapportert
+      kilde: {id: rapport-2004, side: "4"}
+    skjemaendring:
+      beskrivelse: >-
+        En gjentakelse av undersøkelsene i 1998 og 2001. Utgaven var både en publikums- og en
+        brukerundersøkelse, med egne kapitler om blant annet lege, legevakt og helsestasjon.
+      kilde: {id: rapport-2004, side: "2–3"}
+    sammenligner_med:
+      utgaver: ["1998", "2001"]
+      kilde: {id: rapport-2004, side: "5–6"}
+
+  - id: "2007"
+    aar: 2007
+    navn: Publikumsundersøkelsen
+    sporreskjema: {id: skjema-2007, side: "1–12"}
+    oppdrag:
+      oppdragsgiver: Oslo kommune, Utviklings- og kompetanseetaten (UKE)
+      leverandor: Synovate Norge (tidligere MMI)
+      kilde: {id: rapport-2007, side: "3"}
+    malgruppe:
+      beskrivelse: Innbyggere i Oslo, 15–80 år
+      alder_fra: 15
+      alder_til: 80
+      kilde: {id: rapport-2007, side: "3"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: Folkeregisteret. Skjemaet ble sendt i posten.
+      kilde: {id: rapport-2007, side: "3"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: Like mange i hver bydel, 1 200 utsendelser i hver av de 15 bydelene.
+      kilde: {id: rapport-2007, side: "3, 5"}
+    innsamling:
+      beskrivelse: Papirskjema i posten, med mulighet for å svare på nett.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.Paper, antall: 6349}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 523}
+      kilde: {id: rapport-2007, side: "3"}
+    kontakt:
+      beskrivelse: En purring.
+      kilde: {id: rapport-2007, side: "3"}
+    sprak:
+      beskrivelse: >-
+        Skjemaet var på norsk. De i utvalget som i Folkeregisteret hadde fødeland knyttet til de
+        tre største innvandrergruppene, fikk i tillegg følgebrev og en ordliste med begreper fra
+        skjemaet på urdu, tamil eller somali.
+      kilde: {id: rapport-2007, side: "7"}
+    feltperiode:
+      fra: 2007-09-24
+      til: 2007-12-05
+      beskrivelse: null
+      arstid: høst
+      kilde: {id: rapport-2007, side: "3"}
+    svar:
+      bruttoutvalg: 18000
+      nettoutvalg: 6872
+      svarprosent: 39.6
+      beregning: >-
+        Utsendte minus 620 i retur (ukjent adresse) og 38 utenfor målgruppen, til sammen 658.
+      nettoutvalg_merknad: null
+      kilde: {id: rapport-2007, side: "3"}
+    vekting:
+      variabler: [kjønn, alder, bydel]
+      beskrivelse: Vektet etter kjønn, alder og bydel.
+      vektvariabel: {navn: VEKT, kilde: {id: datafil, side: null}}
+      kilde: {id: rapport-2007, side: "5"}
+    landbakgrunn:
+      type: selvrapportert
+      kilde: {id: rapport-2007, side: "6–7"}
+    skjemaendring:
+      beskrivelse: >-
+        Brukerdelen ble tonet ned, og det kom nye spørsmål knyttet til Groruddalssatsingen.
+      kilde: {id: rapport-2007, side: "7–8"}
+    sammenligner_med:
+      utgaver: ["2004"]
+      kilde: {id: rapport-2007, side: "7"}
+
+  - id: "2010"
+    aar: 2010
+    navn: Publikumsundersøkelsen
+    sporreskjema: {id: skjema-2010, side: "1–12"}
+    oppdrag:
+      oppdragsgiver: Oslo kommune, Utviklings- og kompetanseetaten (UKE)
+      leverandor: TNS Gallup
+      kilde: {id: rapport-2010, side: "4"}
+    malgruppe:
+      beskrivelse: Innbyggere i Oslo, 15 år og eldre
+      alder_fra: 15
+      alder_til: null
+      kilde: {id: rapport-2010, side: "4"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: >-
+        Folkeregisteret. Skjemaet ble sendt i posten. Et tilleggsutvalg i åtte delbydeler i
+        Groruddalen ble trukket fra leverandørens internettpanel (GallupPanelet).
+      kilde: {id: rapport-2010, side: "4"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: >-
+        Lik fordeling på 92 delbydeler, med mål om 100 svar i hver. Det ble sendt flere skjemaer
+        der svarprosenten i 2007 var lav. I tillegg et panelutvalg i åtte delbydeler i
+        Groruddalen.
+      kilde: {id: rapport-2010, side: "4, 9"}
+    innsamling:
+      beskrivelse: Papirskjema i posten, med mulighet for å svare på nett. Tilleggsutvalget svarte på nett i panelet.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.Paper, antall: 4917}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 2090}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 171, merknad: panelet}
+      kilde: {id: rapport-2010, side: "6"}
+    kontakt:
+      beskrivelse: En purring, 2. november.
+      kilde: {id: rapport-2010, side: "4"}
+    sprak:
+      beskrivelse: Skjemaet var bare på norsk.
+      kilde: {id: rapport-2010, side: "8"}
+    feltperiode:
+      fra: 2010-10-08
+      til: 2010-11-16
+      beskrivelse: Panelet 10.–20. desember 2010.
+      arstid: høst
+      kilde: {id: rapport-2010, side: "4"}
+    svar:
+      bruttoutvalg: 22468
+      nettoutvalg: 7148
+      svarprosent: 33
+      beregning: Utsendte minus retur (flytting eller feil adresse).
+      nettoutvalg_merknad: >-
+        Rapporten oppgir 7 148 svar i teksten, fordelt på 4 917 papir, 2 090 nett og 171 i
+        panelet (s. 6). Fordelingen summerer til 7 178, som er tallet i tabell 2 på samme side.
+        Beregningen av feilmarginer bruker 7 184 (s. 10). Datafila har 7 007 svar, som er
+        papir og nett uten panelet.
+      kilde: {id: rapport-2010, side: "5–6"}
+    vekting:
+      variabler: [kjønn, alder, bydel]
+      beskrivelse: Vektet etter kjønn, alder og bydel.
+      vektvariabel: {navn: VEKT, kilde: {id: datafil, side: null}}
+      kilde: {id: rapport-2010, side: "9"}
+    landbakgrunn:
+      type: ikke_oppgitt
+      beskrivelse: >-
+        Rapporten sier ikke hvilken kilde som er brukt. Skjemaet spør om eget, mors og fars
+        fødeland, og rapporten viser svarprosent etter fødeland.
+      kilde: {id: rapport-2010, side: "8"}
+    skjemaendring:
+      beskrivelse: >-
+        «med visse mindre modifikasjoner» en gjentakelse av skjemaet fra 2007.
+      kilde: {id: rapport-2010, side: "4"}
+    sammenligner_med:
+      utgaver: ["2007"]
+      kilde: {id: rapport-2010, side: "12"}
+
+  - id: "2014"
+    aar: 2014
+    navn: Publikumsundersøkelsen
+    sporreskjema: {id: rapport-2014, side: "62–68"}
+    oppdrag:
+      oppdragsgiver: Oslo kommune, Byrådsavdeling for finans
+      leverandor: Sentio Research Norge
+      kilde: {id: rapport-2014, side: "3"}
+    malgruppe:
+      beskrivelse: Innbyggere i Oslo, 18 år og eldre
+      alder_fra: 18
+      alder_til: null
+      kilde: {id: rapport-2014, side: "3"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: Folkeregisteret. Skjemaet ble sendt i posten.
+      kilde: {id: rapport-2014, side: "3"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: Fordelt på bydelene etter bydelens størrelse og svarprosenten i 2010.
+      kilde: {id: rapport-2014, side: "3"}
+    innsamling:
+      beskrivelse: Papirskjema i posten, med mulighet for å svare på nett.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.Paper, antall: 9746}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 1760}
+      kilde: {id: rapport-2014, side: "4"}
+    kontakt:
+      beskrivelse: En purring med alt materiellet på nytt, 14. februar.
+      kilde: {id: rapport-2014, side: "3"}
+    sprak:
+      beskrivelse: Papirskjemaet var på norsk. På nett kunne man også svare på engelsk, polsk, somali og urdu.
+      kilde: {id: rapport-2014, side: "3"}
+    feltperiode:
+      fra: 2014-01-10
+      til: 2014-03-12
+      beskrivelse: null
+      arstid: vinter
+      kilde: {id: rapport-2014, side: "3"}
+    svar:
+      bruttoutvalg: 30000
+      nettoutvalg: 11506
+      svarprosent: 40.2
+      beregning: Utsendte minus retur (død, flytting eller feil adresse).
+      nettoutvalg_merknad: null
+      kilde: {id: rapport-2014, side: "4"}
+    vekting:
+      variabler: [kjønn, alder, bydel]
+      beskrivelse: Vektet etter kjønn, alder og bydel.
+      vektvariabel: {navn: vekt, kilde: {id: datafil, side: null}}
+      kilde: {id: rapport-2014, side: "7–8"}
+    landbakgrunn:
+      type: selvrapportert
+      beskrivelse: Eget, mors og fars fødeland.
+      kilde: {id: rapport-2014, side: "5"}
+    skjemaendring:
+      beskrivelse: >-
+        Skjemaet ble revidert «med tanke på å forenkle og kutte ned på omfanget». «Hovedlinjen i
+        tidligere utgaver med formuleringer og svarskala ble tatt vare på».
+      kilde: {id: rapport-2014, side: "3"}
+    sammenligner_med:
+      utgaver: ["2007", "2010"]
+      kilde: {id: rapport-2014, side: "6"}
+
+  - id: "2018"
+    aar: 2018
+    navn: Publikumsundersøkelsen
+    sporreskjema: {id: rapport-2018, side: "113–119"}
+    sporreskjema_merknad: >-
+      Rapporten gjengir papirskjemaet. De som svarte på nett, fikk en programmert versjon med
+      andre spørsmål om tjenestene (se skjemaendring).
+    oppdrag:
+      oppdragsgiver: Oslo kommune, Byrådsavdeling for finans
+      leverandor: Kantar TNS
+      kilde: {id: rapport-2018, side: "5"}
+    malgruppe:
+      beskrivelse: Innbyggere i Oslo, 18 år og eldre
+      alder_fra: 18
+      alder_til: null
+      kilde: {id: rapport-2018, side: "5"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: Folkeregisteret. Skjemaet ble sendt i posten, og mobilnummer ble koblet på for påminnelse på SMS.
+      kilde: {id: rapport-2018, side: "5"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: >-
+        Fordelt etter svarinngangen i 2014 for å få en jevnere fordeling av svar per bydel.
+        Andelen med innvandrerbakgrunn i hver bydel skulle være den samme som i befolkningen.
+        Bruttoutvalget fikk 34,7 prosent med innvandrerbakgrunn, en svak overrepresentasjon på
+        1,6 prosentpoeng.
+      kilde: {id: rapport-2018, side: "5–6, 8"}
+    innsamling:
+      beskrivelse: Papirskjema i posten, med mulighet for å svare på nett. 48 prosent svarte på nett.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.Paper, antall: 5130}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 4698}
+      kilde: {id: rapport-2018, side: "6"}
+    kontakt:
+      beskrivelse: Påminnelse på SMS 16. april og i posten 23. april.
+      kilde: {id: rapport-2018, side: "5"}
+    sprak:
+      beskrivelse: Som i 2014. Papirskjemaet var på norsk. På nett kunne man også svare på engelsk, polsk, somali og urdu.
+      kilde: {id: rapport-2018, side: "5, 9"}
+    feltperiode:
+      fra: 2018-03-27
+      til: 2018-05-23
+      beskrivelse: null
+      arstid: vår
+      kilde: {id: rapport-2018, side: "5"}
+    svar:
+      bruttoutvalg: 30001
+      nettoutvalg: 9828
+      svarprosent: 34
+      beregning: Utsendte minus retur (flytting, feil eller ukjent adresse).
+      nettoutvalg_merknad: Tabell 1.3 og 1.10 i rapporten oppgir 9 827 (s. 7, 11). Datafila har 9 829 svar.
+      kilde: {id: rapport-2018, side: "6"}
+    vekting:
+      variabler: [kjønn, alder, bydel]
+      beskrivelse: >-
+        Vektet etter kjønn, alder i fire grupper og bydel. Rapporten sier at gjennomføringen
+        var lik tidligere år med tanke på datainnsamlingsmetode og vekting.
+      vektvariabel: {navn: NYvekt, kilde: {id: datafil, side: null}}
+      kilde: {id: rapport-2018, side: "10"}
+    landbakgrunn:
+      type: register
+      beskrivelse: Folkeregisteret.
+      kilde: {id: rapport-2018, side: "9"}
+    skjemaendring:
+      beskrivelse: >-
+        Skjemaet ble revidert, men mindre enn i 2014. Noen spørsmål gikk ut og noen kom til,
+        og lengden var om lag den samme. Papirskjemaet og nettskjemaet hadde ulike spørsmål om
+        tjenestene: papirskjemaet brukte skalaen misfornøyd–fornøyd, nettskjemaet skalaen
+        dårlig–bra, med et eget spørsmål om bruk foran vurderingen.
+      kilde: {id: rapport-2018, side: "5, 114"}
+      kilde_tillegg: {id: nettskjema-2018, side: null}
+    sammenligner_med:
+      utgaver: ["2007", "2010", "2014"]
+      kilde: {id: rapport-2018, side: "10"}
+
+  - id: "2023"
+    aar: 2023
+    navn: Innbyggerundersøkelsen
+    sporreskjema: {id: rapport-2023, side: "87–105"}
+    oppdrag:
+      oppdragsgiver: Oslo kommune
+      leverandor: Kantar Public
+      kilde: {id: rapport-2023, side: "4"}
+    malgruppe:
+      beskrivelse: >-
+        Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i
+        utvalget.
+      alder_fra: 18
+      alder_til: null
+      kilde: {id: rapport-2023, side: "4, 7"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: >-
+        Folkeregisteret, uttrekk ved TietoEvry. Personer som har reservert seg mot å bli
+        kontaktet, ble tatt ut.
+      kilde: {id: rapport-2023, side: "5, 8"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: >-
+        To utvalg, begge trukket disproporsjonalt etter landbakgrunn i hver bydel. Det digitale
+        utvalget ble overtrukket direkte blant innvandrergrupper; planen var 52,8 prosent med
+        bakgrunn fra Asia, Afrika, Latin-Amerika og Øst-Europa utenfor EU. Det postale utvalget
+        på 4 500 ble trukket som i 2018, med overtrekk etter bydel, for å kunne sammenligne med
+        2018.
+      kilde: {id: rapport-2023, side: "4, 7"}
+    innsamling:
+      beskrivelse: >-
+        Det digitale utvalget fikk invitasjon på e-post og svarte på nett. Det postale utvalget
+        fikk skjemaet i posten, med mulighet for å svare på nett.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 27685, merknad: digitalt utvalg}
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 613, merknad: postalt utvalg}
+        - {kode: SelfAdministeredQuestionnaire.Paper, antall: 553, merknad: postalt utvalg}
+      merknad: >-
+        Fordelingen i det postale utvalget er hentet fra tabell 2.21 (s. 20). Teksten på s. 11
+        oppgir den motsatte fordelingen.
+      kilde: {id: rapport-2023, side: "4, 20"}
+    kontakt:
+      beskrivelse: >-
+        Digitalt utvalg: e-post 17. april, påminnelse på e-post 11. mai og på SMS 22. mai.
+        Postalt utvalg: brev 25. april, påminnelse i brev 16. mai og på SMS 30. mai.
+      kilde: {id: rapport-2023, side: "6"}
+    sprak:
+      beskrivelse: >-
+        Digitalt utvalg: norsk, engelsk, polsk, urdu eller somali. Postalt utvalg: papirskjemaet
+        på norsk, nettskjemaet på alle fem språk.
+      kilde: {id: rapport-2023, side: "5–6, 12"}
+    feltperiode:
+      fra: 2023-04-17
+      til: 2023-06-05
+      beskrivelse: >-
+        Digitalt utvalg 17. april–5. juni, postalt utvalg 25. april–1. juni. Undersøkelsen var
+        planlagt til 2022, men ble utsatt på grunn av pandemien.
+      arstid: vår
+      kilde: {id: rapport-2023, side: "4–6"}
+    svar:
+      bruttoutvalg: 142260
+      nettoutvalg: 28851
+      svarprosent: null
+      beregning: >-
+        Oppgitt for hvert utvalg. Digitalt: 27 685 svar av 137 760 invitasjoner etter at
+        reserverte var tatt ut, 20,1 prosent (s. 8). Postalt: 1 166 svar av 4 500 utsendte minus
+        246 i retur, 27 prosent (s. 10–11).
+      nettoutvalg_merknad: >-
+        Bruttoutvalget er summen av 137 760 og 4 500. Rapporten oppgir også 137 777 utsendinger
+        i det digitale utvalget (s. 4). Nettoutvalget er summen i tabell 2.21 (s. 20). Tabell
+        2.20 oppgir 28 818 for det vektede utvalget (s. 19).
+      kilde: {id: rapport-2023, side: "8, 10–11, 20"}
+    vekting:
+      variabler: [kjønn, alder, bydel, landbakgrunn]
+      beskrivelse: >-
+        Vektet etter kjønn, alder i fire grupper og landbakgrunn i hver bydel, og etter
+        landbakgrunn i fire grupper.
+      vektvariabel: {navn: NewWeight, kilde: {id: datafil, side: null}}
+      kilde: {id: rapport-2023, side: "12"}
+    landbakgrunn:
+      type: register
+      beskrivelse: Folkeregisteret.
+      kilde: {id: rapport-2023, side: "6"}
+    skjemaendring:
+      beskrivelse: >-
+        Hovedtyngden av spørsmålene ble beholdt, men noen spørsmål ble flyttet innenfor temaene.
+        Fire nye temaer: tilhørighet, framkommelighet, medvirkning og korona.
+      kilde: {id: rapport-2023, side: "4"}
+    sammenligner_med:
+      utgaver: ["2007", "2010", "2014", "2018"]
+      merknad: Rapporten sier at sammenligning over tid må gjøres med varsomhet.
+      kilde: {id: rapport-2023, side: "18"}
+
+  - id: "2026"
+    aar: 2026
+    navn: Innbyggerundersøkelsen
+    sporreskjema: {id: metoderapport-2026, side: "15–39"}
+    oppdrag:
+      oppdragsgiver: Oslo kommune
+      leverandor: Opinion
+      kilde: {id: metoderapport-2026, side: "1"}
+    malgruppe:
+      beskrivelse: >-
+        Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort
+        botid var med i utvalget.
+      alder_fra: 18
+      alder_til: null
+      kilde: {id: metoderapport-2026, side: "1, 7"}
+    analyseenhet: Individual
+    tidsmetode: CrossSection
+    utvalgsramme:
+      beskrivelse: >-
+        Folkeregisteret, med kontaktinformasjon fra Kontakt- og reservasjonsregisteret (KRR).
+        Uttrekk ved Tietoevry.
+      kilde: {id: metoderapport-2026, side: "1"}
+    utvalgsdesign:
+      type: Probability.Stratified.Disproportional
+      beskrivelse: Stratifisert etter bydel og landbakgrunn, justert etter svarprosenten i 2023.
+      kilde: {id: metoderapport-2026, side: "1–2"}
+    innsamling:
+      beskrivelse: >-
+        Bare nett. Personer som har reservert seg mot digital kommunikasjon fra det offentlige,
+        fikk brev med QR-kode og kunne avtale telefonintervju. Svært få ønsket det.
+      modus:
+        - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 19555}
+      merknad: Antallet omfatter alle svar. Antallet telefonintervjuer er ikke oppgitt.
+      kilde: {id: metoderapport-2026, side: "3"}
+    kontakt:
+      beskrivelse: Forvarsel på SMS, invitasjon på e-post og to påminnelser (e-post og SMS).
+      kilde: {id: metoderapport-2026, side: "3"}
+    sprak:
+      beskrivelse: Norsk, engelsk, polsk, urdu og somali.
+      kilde: {id: metoderapport-2026, side: "3"}
+    feltperiode:
+      fra: 2026-04-23
+      til: 2026-06-01
+      beskrivelse: null
+      arstid: vår
+      kilde: {id: metoderapport-2026, side: "3"}
+    svar:
+      bruttoutvalg: 149996
+      nettoutvalg: 19555
+      svarprosent: 13.0
+      beregning: >-
+        Av alle utsendte, uten fratrekk for retur. Av de litt over 8 000 brevene kom anslagsvis
+        2 000–2 500 i retur.
+      nettoutvalg_merknad: null
+      kilde: {id: metoderapport-2026, side: "3–4"}
+    vekting:
+      variabler: [kjønn, alder, bydel, landbakgrunn]
+      beskrivelse: >-
+        Cellevekter etter kjønn, alder og geografi, og rimvekting (raking) etter landbakgrunn.
+        Vektene ligger mellom 0,51 og 7,09.
+      vektvariabel: {navn: weight, kilde: {id: datafil, side: null}}
+      kilde: {id: metoderapport-2026, side: "7, 11"}
+    landbakgrunn:
+      type: register
+      beskrivelse: Registeropplysning i utvalgsgrunnlaget. Utvalget er trukket etter bydel og landbakgrunn.
+      kilde: {id: metoderapport-2026, side: "2"}
+    skjemaendring:
+      beskrivelse: Beredskap er et nytt tema.
+      kilde: {id: metoderapport-2026, side: "1"}
+    sammenligner_med:
+      utgaver: ["2014", "2018", "2023"]
+      kilde: {id: metoderapport-2026, side: "1"}

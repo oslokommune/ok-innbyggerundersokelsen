@@ -1,0 +1,33 @@
+# Repoet er offentlig. Mønstrene under er en sperre mot at datafiler kommer med ved et uhell.
+# Ikke fjern dem, og ikke bruk `git add -f` forbi dem.
+
+# Svar fra enkeltpersoner hører aldri hjemme her
+mikrodata/
+respondenter/
+*_mikrodata.*
+*_respondent*.*
+
+# Dataformater. Kilden her er YAML i data/; et regneark eller en datafil i treet er
+# nesten alltid en fil på avveie.
+*.sav
+*.zsav
+*.por
+*.dta
+*.sas7bdat
+*.xpt
+*.rds
+*.parquet
+*.xlsx
+*.xls
+*.csv
+
+# Utviklingsstøy
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# Lokale notater og innstillinger
+*.local.md
+ut/

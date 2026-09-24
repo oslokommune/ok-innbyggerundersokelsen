@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Konseptene",
+  "type": "object",
+  "required": ["formatversjon", "konsepter"],
+  "additionalProperties": false,
+  "properties": {
+    "formatversjon": {"const": 1},
+    "konsepter": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "navn", "beskrivelse", "koblinger", "note_til_tabell"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "navn": {"type": "string"},
+          "beskrivelse": {"type": "string"},
+          "tema": {"type": "string"},
+          "koblinger": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "konsept", "utgave"],
+              "additionalProperties": false,
+              "properties": {
+                "type": {"enum": ["delt_fra", "slatt_sammen_fra", "erstatter"]},
+                "konsept": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+                "utgave": {"type": "string"},
+                "merknad": {"type": ["string", "null"]}
+              }
+            }
+          },
+          "note_til_tabell": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}
