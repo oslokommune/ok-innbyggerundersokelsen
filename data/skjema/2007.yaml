@@ -74,3 +74,69 @@ sporsmal:
         kan ikke skilles fra ubesvart.
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_der_du_bor
+    skjema_nr: "16"
+    ledd_nr: "5"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "Hvor fornøyd eller misfornøyd er du med. . . ?"
+      - "....der du bor"
+    instruksjon:
+      - "NÅ SKAL VI STILLE NOEN MER DETALJERTE SPØRSMÅL OM ULIKE TEMA."
+      - "For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd."
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: 7, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: skjema-2007, side: "5"}
+    merknad: null
+    datafil:
+      variabel: "Q19_5"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har
+        etikett i fila. Svar uten gyldig verdi er tomme. Variabelen er plassert etter rekkefølgen i skjemaet,
+        der blokken «der du bor» står etter blokken «i Oslo sentrum», og plasseringen er
+        bekreftet mot andelen som er publisert i rapporten for 2007.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: natur_friluft_der_du_bor
+    skjema_nr: "13"
+    ledd_nr: "7"
+    seksjon: "NÆRMERE VURDERING AV BYDELEN OG OMRÅDET DER DU BOR."
+    innledning: "Hvor fornøyd/misfornøyd er du når det gjelder. . . ?"
+    instruksjon:
+      - "Vi ber deg nå vurdere nærmere ulike forhold knyttet til BYDELEN OG OMRÅDET DU BOR I."
+      - "For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd."
+    ledd_tekst: "Tilgang til natur- og friluftsområder i bydelen"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: 7, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: skjema-2007, side: "3"}
+    merknad: null
+    datafil:
+      variabel: "Q15_2"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har
+        etikett i fila. Svar uten gyldig verdi er tomme.
+      kontrollert: true
+      kilde: {id: datafil, side: null}

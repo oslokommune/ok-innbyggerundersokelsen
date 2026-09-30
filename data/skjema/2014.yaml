@@ -70,3 +70,61 @@ sporsmal:
         uten etikett forekommer i færre enn 20 svar per spørsmål, og regnes som manglende.
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_der_du_bor
+    skjema_nr: "12"
+    ledd_nr: "1"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "..der du bor"
+      - "Hvor fornøyd/misfornøyd er du med..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "64"}
+    merknad: null
+    datafil:
+      variabel: "Q12_1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: natur_friluft_der_du_bor
+    skjema_nr: "7"
+    ledd_nr: "1"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "NÆRMERE VURDERING AV OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Tilgang til natur- og friluftsområder i bydelen der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "62"}
+    merknad: null
+    datafil:
+      variabel: "Q7_1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 10 svar, og regnes som
+        manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}

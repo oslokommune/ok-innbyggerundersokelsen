@@ -106,3 +106,96 @@ sporsmal:
           - {kode: 6, tekst: "Svært fornøyd"}
           - {kode: null, tekst: "Ikke sikker"}
         kilde: {id: nettskjema-2018, side: null}
+  - konsept: trygghet_dag_der_du_bor
+    skjema_nr: "5"
+    ledd_nr: "3"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2018, side: "115"}
+    merknad: Datafila følger nummereringen i nettskjemaet (Q007), ikke papirskjemaet (5).
+    datafil:
+      variabel: "Q007__3"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [8]
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+    varianter:
+      - navn: nettskjema
+        beskrivelse: Versjonen for dem som svarte på nett.
+        skjema_nr: "Q007"
+        ledd_nr: "3"
+        seksjon: "Nå noen spørsmål om trygghet"
+        innledning: "Hvor fornøyd/misfornøyd er du med ..."
+        ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid der du bor"
+        svartype: skala
+        svaralternativer:
+          - {kode: 1, tekst: "Svært misfornøyd"}
+          - {kode: 2, tekst: null}
+          - {kode: 3, tekst: null}
+          - {kode: 4, tekst: null}
+          - {kode: 5, tekst: null}
+          - {kode: 6, tekst: "Svært fornøyd"}
+          - {kode: null, tekst: "Ikke sikker"}
+        kilde: {id: nettskjema-2018, side: null}
+  - konsept: natur_friluft_der_du_bor
+    skjema_nr: "2"
+    ledd_nr: "1"
+    seksjon: "Først noen spørsmål om hvordan det er å bo i Oslo."
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Tilgang til natur- og friluftsområder der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2018, side: "114"}
+    merknad: Datafila følger nummereringen i nettskjemaet (Q002), ikke papirskjemaet (2).
+    datafil:
+      variabel: "Q002__1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [8]
+      merknad: >-
+        Kodene 7 (Ikke sikker) og 8 (na) er deklarert som brukerdefinerte manglende verdier i
+        datafila. Programmer som ikke leser slike deklarasjoner, viser begge som tomme, og da
+        forsvinner «Ikke sikker».
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+    varianter:
+      - navn: nettskjema
+        beskrivelse: Versjonen for dem som svarte på nett.
+        skjema_nr: "Q002"
+        ledd_nr: "1"
+        seksjon: "Nå en nærmere vurdering av området der du bor."
+        innledning: "Hvor fornøyd/misfornøyd er du med:"
+        ledd_tekst: "Tilgang til natur- og friluftsområder der du bor"
+        svartype: skala
+        svaralternativer:
+          - {kode: 1, tekst: "Svært misfornøyd"}
+          - {kode: 2, tekst: null}
+          - {kode: 3, tekst: null}
+          - {kode: 4, tekst: null}
+          - {kode: 5, tekst: null}
+          - {kode: 6, tekst: "Svært fornøyd"}
+          - {kode: null, tekst: "Ikke sikker"}
+        kilde: {id: nettskjema-2018, side: null}

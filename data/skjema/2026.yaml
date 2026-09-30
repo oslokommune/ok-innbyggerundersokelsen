@@ -66,3 +66,57 @@ sporsmal:
       merknad: null
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_der_du_bor
+    skjema_nr: "Q004"
+    ledd_nr: "r3"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: "Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "1 - Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "6 - Svært fornøyd"}
+      - {kode: 98, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: metoderapport-2026, side: "20"}
+    merknad: null
+    datafil:
+      variabel: "Q004r3"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 98
+      manglende: tom
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: natur_friluft_der_du_bor
+    skjema_nr: "Q006"
+    ledd_nr: "r11"
+    seksjon: "Nå noen spørsmål om miljø og bruken av tiden din"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: "Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd"
+    ledd_tekst: "Tilgang til natur- og friluftsområder der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "1 - Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "6 - Svært fornøyd"}
+      - {kode: 98, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: metoderapport-2026, side: "21"}
+    merknad: null
+    datafil:
+      variabel: "Q006r11"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 98
+      manglende: tom
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}

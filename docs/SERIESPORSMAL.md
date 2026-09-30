@@ -30,6 +30,8 @@ i selve teksten («1 - I svært liten grad»).
 
 - [Trivsel i Oslo](#trivsel-i-oslo)
 - [Trygghet ute på kveldstid der du bor](#trygghet-ute-på-kveldstid-der-du-bor)
+- [Trygghet ute på dagtid der du bor](#trygghet-ute-på-dagtid-der-du-bor)
+- [Tilgang til natur- og friluftsområder der du bor](#tilgang-til-natur--og-friluftsområder-der-du-bor)
 
 ## Trivsel i Oslo
 
@@ -288,6 +290,268 @@ Endret i metoden:
 **Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold.
 
 Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 20. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
+
+### Standardmerknad til tabeller
+
+Denne teksten brukes som merknad når tall for spørsmålet publiseres i tabeller:
+
+> Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett. Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023 konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+## Trygghet ute på dagtid der du bor
+
+Konsept-id: `trygghet_dag_der_du_bor`. Hvor fornøyd man er med tryggheten når det gjelder å ferdes ute på dagtid i området der man bor, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
+
+**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: ja.
+
+### Ordlyd per utgave
+
+| Utgave | Spm. | Ordlyd | Instruksjon | Svaralternativer | Variabel i datafila | Kilde |
+|---|---|---|---|---|---|---|
+| 2007 | 16, linje 5 | «Hvor fornøyd eller misfornøyd er du med. . . ?» «....der du bor» **«Trygghet når det gjelder å ferdes ute på dagtid»** | «NÅ SKAL VI STILLE NOEN MER DETALJERTE SPØRSMÅL OM ULIKE TEMA.» «For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd.» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; 7 = Ikke sikker | `Q19_5` | Spørreskjema 2007, s. 5 |
+| 2010 | 19, linje 5 | «Hvor fornøyd eller misfornøyd er du med. . .» «....der du bor» **«Trygghet når det gjelder å ferdes ute på dagtid»** | – | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q19_5` | Spørreskjema 2010, s. 5 |
+| 2014 | 12, linje 1 | «..der du bor» «Hvor fornøyd/misfornøyd er du med...» **«Trygghet når det gjelder å ferdes ute på dagtid»** | «Merk: Sett ett kryss på hver linje» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q12_1` | Rapport 2014, s. 64 |
+| 2018 | 5, linje 3 | «Hvor fornøyd/misfornøyd er du med:» **«Trygghet når det gjelder å ferdes ute på dagtid der du bor»** | «Merk: Sett ett kryss på hver linje» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q007__3` | Rapport 2018, s. 115 |
+| 2023 | Q004, linje 3 | «Hvor fornøyd/misfornøyd er du med:» **«Trygghet når det gjelder å ferdes ute på dagtid der du bor»** | – | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q004#3` | Rapport 2023, s. 91 |
+| 2026 | Q004, linje r3 | «Hvor fornøyd/misfornøyd er du med:» **«Trygghet når det gjelder å ferdes ute på dagtid der du bor»** | «Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd» | 1 = 1 - Svært misfornøyd; 2; 3; 4; 5; 6 = 6 - Svært fornøyd; 98 = Ikke sikker | `Q004r3` | Metoderapport 2026, s. 20 |
+
+- **2018:** Datafila følger nummereringen i nettskjemaet (Q007), ikke papirskjemaet (5).
+- **2018, nettskjema** (Q007, Nettskjema 2018): Versjonen for dem som svarte på nett. Avvik fra papirskjemaet i innledning: «Hvor fornøyd/misfornøyd er du med ...» **«Trygghet når det gjelder å ferdes ute på dagtid der du bor»**.
+
+### Koding i datafilene
+
+| Utgave | Variabel | Gyldige koder | «Ikke sikker» | Ubesvart | Merknad |
+|---|---|---|---|---|---|
+| 2007 | `Q19_5` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila. Svar uten gyldig verdi er tomme. Variabelen er plassert etter rekkefølgen i skjemaet, der blokken «der du bor» står etter blokken «i Oslo sentrum», og plasseringen er bekreftet mot andelen som er publisert i rapporten for 2007. |
+| 2010 | `Q19_5` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila. Svar uten gyldig verdi er tomme. Variabelen er plassert etter rekkefølgen i skjemaet, der blokken «der du bor» står etter blokken «i Oslo sentrum», og plasseringen er bekreftet mot andelen som er publisert i rapporten for 2007. |
+| 2014 | `Q12_1` | 1–6 | 7 | tom | – |
+| 2018 | `Q007__3` | 1–6 | 7 | 8 | – |
+| 2023 | `Q004#3` | 1–6 | 7 | 9996 og tom | – |
+| 2026 | `Q004r3` | 1–6 | 98 | tom | – |
+
+### Overgangene
+
+#### 2007 → 2010: Med forbehold
+
+Endret i skjemaet:
+
+- Innledning: «Hvor fornøyd eller misfornøyd er du med. . . ? / ....der du bor» → «Hvor fornøyd eller misfornøyd er du med. . . / ....der du bor»
+- Instruksjon: «NÅ SKAL VI STILLE NOEN MER DETALJERTE SPØRSMÅL OM ULIKE TEMA. / For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd.» → ingen
+- Svaralternativer: 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; 7 = Ikke sikker → 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker
+- Kode for «Ikke sikker» i skjemaet: 7 → ingen
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 15–80 år → Innbyggere i Oslo, 15 år og eldre
+- Leverandør: Synovate Norge (tidligere MMI) → TNS Gallup
+- Svar per innsamlingsmodus: papir 92 %, nett 8 % → papir 69 %, nett 31 %
+- Kilde til landbakgrunn: selvrapportert → ikke oppgitt
+
+**Vurdering:** Ordlyden, batteriet og skalaen er de samme. Målgruppen ble utvidet fra 15–80 år til 15 år og eldre. Endringen gjelder alle spørsmål og vises derfor også her. Feltarbeidet var om høsten begge år.
+
+Grunnlag: Spørreskjema 2007, s. 5; Spørreskjema 2010, s. 5; Rapport 2007, s. 3; Rapport 2010, s. 4. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2010 → 2014: Med forbehold
+
+Endret i skjemaet:
+
+- Innledning: «Hvor fornøyd eller misfornøyd er du med. . . / ....der du bor» → «..der du bor / Hvor fornøyd/misfornøyd er du med...»
+- Instruksjon: ingen → «Merk: Sett ett kryss på hver linje»
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 15 år og eldre → Innbyggere i Oslo, 18 år og eldre
+- Leverandør: TNS Gallup → Sentio Research Norge
+- Svar per innsamlingsmodus: papir 69 %, nett 31 % → papir 85 %, nett 15 %
+- Årstid for feltarbeidet: høst → vinter
+- Kilde til landbakgrunn: ikke oppgitt → selvrapportert
+
+**Vurdering:** Ordlyden, batteriet (med linjene om politiets innsats) og skalaen er de samme. Målgruppen ble endret fra 15 år og eldre til 18 år og eldre, så populasjonen er ikke den samme. Feltarbeidet flyttet fra høst til vinter.
+
+Grunnlag: Spørreskjema 2010, s. 5; Rapport 2010, s. 4; Rapport 2014, s. 3, 64. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2014 → 2018: Med forbehold
+
+Endret i skjemaet:
+
+- Innledning: «..der du bor / Hvor fornøyd/misfornøyd er du med...» → «Hvor fornøyd/misfornøyd er du med:»
+- Spørsmålstekst: «Trygghet når det gjelder å ferdes ute på dagtid» → «Trygghet når det gjelder å ferdes ute på dagtid der du bor»
+
+Endret i metoden:
+
+- Leverandør: Sentio Research Norge → Kantar TNS
+- Svar per innsamlingsmodus: papir 85 %, nett 15 % → papir 52 %, nett 48 %
+- Årstid for feltarbeidet: vinter → vår
+- Kilde til landbakgrunn: selvrapportert → register
+
+**Vurdering:** «der du bor» ble flyttet fra en underoverskrift inn i linjeteksten, og linjene om politiets innsats ble tatt ut av batteriet. Meningen er den samme, men sammenhengen i skjemaet er en annen, som for trygghet på kveldstid. Feltarbeidet flyttet fra vinter (januar–mars) til vår (mars–mai). Rapporten for 2018 sammenligner selv med 2014.
+
+Grunnlag: Rapport 2014, s. 3, 64; Rapport 2018, s. 5, 49, 115; Nettskjema 2018. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2018 → 2023: Med forbehold
+
+Endret i skjemaet:
+
+- Instruksjon: «Merk: Sett ett kryss på hver linje» → ingen
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre → Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget.
+- Leverandør: Kantar TNS → Kantar Public
+- Svar per innsamlingsmodus: papir 52 %, nett 48 % → nett 98 %, papir 2 %
+- Vektet etter: kjønn, alder, bydel → kjønn, alder, bydel, landbakgrunn
+
+**Vurdering:** Omleggingen i 2023, som for trivsel. Ordlyden, batteriet og skalaen er de samme, og feltarbeidet var om våren begge år. Rapporten for 2023 ber om varsomhet ved sammenligning over tid.
+
+Grunnlag: Rapport 2023, s. 4, 7, 12, 18, 91. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2023 → 2026: Ja
+
+Endret i skjemaet:
+
+- Instruksjon: ingen → «Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd»
+- Svaralternativer: 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker → 1 = 1 - Svært misfornøyd; 2; 3; 4; 5; 6 = 6 - Svært fornøyd; 98 = Ikke sikker
+- Kode for «Ikke sikker» i skjemaet: ingen → 98
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget.
+- Leverandør: Kantar Public → Opinion
+- Svar per innsamlingsmodus: nett 98 %, papir 2 % → nett 100 %
+
+**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold.
+
+Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 20. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+### Standardmerknad til tabeller
+
+Denne teksten brukes som merknad når tall for spørsmålet publiseres i tabeller:
+
+> Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett. Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023 konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+## Tilgang til natur- og friluftsområder der du bor
+
+Konsept-id: `natur_friluft_der_du_bor`. Hvor fornøyd man er med tilgangen til natur- og friluftsområder i området der man bor, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
+
+**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: ja.
+
+### Ordlyd per utgave
+
+| Utgave | Spm. | Ordlyd | Instruksjon | Svaralternativer | Variabel i datafila | Kilde |
+|---|---|---|---|---|---|---|
+| 2007 | 13, linje 7 | «Hvor fornøyd/misfornøyd er du når det gjelder. . . ?» **«Tilgang til natur- og friluftsområder i bydelen»** | «Vi ber deg nå vurdere nærmere ulike forhold knyttet til BYDELEN OG OMRÅDET DU BOR I.» «For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd.» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; 7 = Ikke sikker | `Q15_2` | Spørreskjema 2007, s. 3 |
+| 2010 | 15, linje 2 | «NÆRMERE VURDERING AV BYDELEN OG OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder...» **«Tilgang til natur- og friluftsområder i bydelen»** | «Merk: Sett ett kryss på hver linje» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q15_2` | Spørreskjema 2010, s. 3 |
+| 2014 | 7, linje 1 | «NÆRMERE VURDERING AV OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder...» **«Tilgang til natur- og friluftsområder i bydelen der du bor»** | «Merk: Sett ett kryss på hver linje» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q7_1` | Rapport 2014, s. 62 |
+| 2018 | 2, linje 1 | «Hvor fornøyd/misfornøyd er du med:» **«Tilgang til natur- og friluftsområder der du bor»** | «Merk: Sett ett kryss på hver linje» | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q002__1` | Rapport 2018, s. 114 |
+| 2023 | Q007, linje 12 | «Hvor fornøyd/misfornøyd er du med:» **«Tilgang til natur- og friluftsområder der du bor»** | – | 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker | `Q007#12` | Rapport 2023, s. 93 |
+| 2026 | Q006, linje r11 | «Hvor fornøyd/misfornøyd er du med:» **«Tilgang til natur- og friluftsområder der du bor»** | «Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd» | 1 = 1 - Svært misfornøyd; 2; 3; 4; 5; 6 = 6 - Svært fornøyd; 98 = Ikke sikker | `Q006r11` | Metoderapport 2026, s. 21 |
+
+- **2018:** Datafila følger nummereringen i nettskjemaet (Q002), ikke papirskjemaet (2).
+- **2018, nettskjema** (Q002, Nettskjema 2018): Versjonen for dem som svarte på nett. Samme ordlyd og svaralternativer som papirskjemaet.
+
+### Koding i datafilene
+
+| Utgave | Variabel | Gyldige koder | «Ikke sikker» | Ubesvart | Merknad |
+|---|---|---|---|---|---|
+| 2007 | `Q15_2` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila. Svar uten gyldig verdi er tomme. |
+| 2010 | `Q15_2` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila. Svar uten gyldig verdi er tomme. |
+| 2014 | `Q7_1` | 1–6 | 7 | tom | Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 10 svar, og regnes som manglende. |
+| 2018 | `Q002__1` | 1–6 | 7 | 8 | Kodene 7 (Ikke sikker) og 8 (na) er deklarert som brukerdefinerte manglende verdier i datafila. Programmer som ikke leser slike deklarasjoner, viser begge som tomme, og da forsvinner «Ikke sikker». |
+| 2023 | `Q007#12` | 1–6 | 7 | 9996 | Ubesvart er kodet 9996; i tillegg er noen få svar tomme. |
+| 2026 | `Q006r11` | 1–6 | 98 | tom | – |
+
+### Overgangene
+
+#### 2007 → 2010: Med forbehold
+
+Endret i skjemaet:
+
+- Innledning: «Hvor fornøyd/misfornøyd er du når det gjelder. . . ?» → «NÆRMERE VURDERING AV BYDELEN OG OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder...»
+- Instruksjon: «Vi ber deg nå vurdere nærmere ulike forhold knyttet til BYDELEN OG OMRÅDET DU BOR I. / For hvert av forholdene ber vi deg svare langs en skala fra 1 til 6, der 1 betyr at du er svært misfornøyd med dette forholdet, og 6 betyr at du er svært fornøyd.» → «Merk: Sett ett kryss på hver linje»
+- Svaralternativer: 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; 7 = Ikke sikker → 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker
+- Kode for «Ikke sikker» i skjemaet: 7 → ingen
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 15–80 år → Innbyggere i Oslo, 15 år og eldre
+- Leverandør: Synovate Norge (tidligere MMI) → TNS Gallup
+- Svar per innsamlingsmodus: papir 92 %, nett 8 % → papir 69 %, nett 31 %
+- Kilde til landbakgrunn: selvrapportert → ikke oppgitt
+
+**Vurdering:** Linjeteksten og skalaen er de samme, og spørsmålet står i det samme batteriet om bydelen og området der man bor. Målgruppen ble utvidet fra 15–80 år til 15 år og eldre. Endringen gjelder alle spørsmål og vises derfor også her. Feltarbeidet var om høsten begge år.
+
+Grunnlag: Spørreskjema 2007, s. 3; Spørreskjema 2010, s. 3; Rapport 2007, s. 3; Rapport 2010, s. 4. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2010 → 2014: Med forbehold
+
+Endret i skjemaet:
+
+- Innledning: «NÆRMERE VURDERING AV BYDELEN OG OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder...» → «NÆRMERE VURDERING AV OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder...»
+- Spørsmålstekst: «Tilgang til natur- og friluftsområder i bydelen» → «Tilgang til natur- og friluftsområder i bydelen der du bor»
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 15 år og eldre → Innbyggere i Oslo, 18 år og eldre
+- Leverandør: TNS Gallup → Sentio Research Norge
+- Svar per innsamlingsmodus: papir 69 %, nett 31 % → papir 85 %, nett 15 %
+- Årstid for feltarbeidet: høst → vinter
+- Kilde til landbakgrunn: ikke oppgitt → selvrapportert
+
+**Vurdering:** Linjeteksten ble endret fra «… i bydelen» til «… i bydelen der du bor», og overskriften på batteriet nevner ikke lenger bydelen, bare området der man bor. Meningen er den samme, med et presisert sted. Målgruppen ble endret fra 15 år og eldre til 18 år og eldre, så populasjonen er ikke den samme. Feltarbeidet flyttet fra høst til vinter.
+
+Grunnlag: Spørreskjema 2010, s. 3; Rapport 2010, s. 4; Rapport 2014, s. 3, 62. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2014 → 2018: Med forbehold
+
+Endret i skjemaet:
+
+- Innledning: «NÆRMERE VURDERING AV OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder...» → «Hvor fornøyd/misfornøyd er du med:»
+- Spørsmålstekst: «Tilgang til natur- og friluftsområder i bydelen der du bor» → «Tilgang til natur- og friluftsområder der du bor»
+
+Endret i metoden:
+
+- Leverandør: Sentio Research Norge → Kantar TNS
+- Svar per innsamlingsmodus: papir 85 %, nett 15 % → papir 52 %, nett 48 %
+- Årstid for feltarbeidet: vinter → vår
+- Kilde til landbakgrunn: selvrapportert → register
+
+**Vurdering:** Linjeteksten ble endret fra «… i bydelen der du bor» til «… der du bor». Spørsmålet står rett etter spørsmålene om trivsel begge år; nummeret endret seg fordi bakgrunnsspørsmålene ble flyttet til slutten av skjemaet, og i papirskjemaet falt overskriften om området der du bor, bort. «Der du bor» uten «i bydelen» kan leses som et litt annet område, men rapporten for 2018 sammenligner selv med 2014 og behandler det som samme spørsmål. Feltarbeidet flyttet fra vinter til vår.
+
+Grunnlag: Rapport 2014, s. 3, 62; Rapport 2018, s. 5, 31, 114, 118; Nettskjema 2018. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2018 → 2023: Med forbehold
+
+Endret i skjemaet:
+
+- Instruksjon: «Merk: Sett ett kryss på hver linje» → ingen
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre → Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget.
+- Leverandør: Kantar TNS → Kantar Public
+- Svar per innsamlingsmodus: papir 52 %, nett 48 % → nett 98 %, papir 2 %
+- Vektet etter: kjønn, alder, bydel → kjønn, alder, bydel, landbakgrunn
+
+**Vurdering:** Omleggingen i 2023, som for trivsel. Linjeteksten og skalaen er de samme, men spørsmålet ble flyttet til batteriet «Nå noen spørsmål om miljø», med et nytt ledd om tilgangen i Osloområdet generelt rett etter. Rapporten for 2023 viser ikke tidligere år i figuren for dette spørsmålet og begrunner det i en fotnote: «Spørsmålet ble stilt i en annen del av undersøkelsen og resultater fra foregående år vises derfor ikke i grafen.» I teksten sammenligner rapporten likevel med tidligere år. Rapporten sier også at det postale utvalget var mer fornøyd enn det digitale med tilgangen til natur- og friluftsområder der de bor (s. 21). Spørsmålet måler det samme, men flyttingen kan ha påvirket tallene. Feltarbeidet var om våren begge år.
+
+Grunnlag: Rapport 2023, s. 4, 7, 12, 18, 21, 47, 93. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+
+#### 2023 → 2026: Ja
+
+Endret i skjemaet:
+
+- Instruksjon: ingen → «Svar på en skala fra 1-6 der 1 er svært misfornøyd og 6 er svært fornøyd»
+- Svaralternativer: 1 = Svært misfornøyd; 2; 3; 4; 5; 6 = Svært fornøyd; Ikke sikker → 1 = 1 - Svært misfornøyd; 2; 3; 4; 5; 6 = 6 - Svært fornøyd; 98 = Ikke sikker
+- Kode for «Ikke sikker» i skjemaet: ingen → 98
+
+Endret i metoden:
+
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget.
+- Leverandør: Kantar Public → Opinion
+- Svar per innsamlingsmodus: nett 98 %, papir 2 % → nett 100 %
+
+**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Spørsmålet står i batteriet om miljø begge år, foran leddet om Osloområdet generelt. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold.
+
+Grunnlag: Rapport 2023, s. 4, 7, 12, 93; Metoderapport 2026, s. 1–4, 7, 21. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
 
 ### Standardmerknad til tabeller
 

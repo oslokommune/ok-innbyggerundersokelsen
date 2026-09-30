@@ -53,11 +53,13 @@ datainnsamlingsmetode og vekting av materialet» (rapport 2018 s. 10). Omlegging
 
 Leverandøren trakk også et mindre postalt utvalg, på samme måte som i 2018, for å kunne
 sammenligne. Samlet vurderte det postale utvalget tjenestene bedre enn det digitale (rapport
-2023 s. 20), og der det var forskjell, var den «gjerne på syv til åtte prosentpoeng i favør av
-postalutvalget» (rapport 2023 s. 21). På «Trives du i Oslo?» svarte 83
-prosent 5 eller 6 i det postale utvalget, mot 76 prosent i det digitale (rapport 2023 s. 20).
-Det er to utvalg i samme år, ikke en endring over tid. For trygghet ute på kveldstid oppgir
-rapporten ingen slik sammenligning.
+2023 s. 20). For «andre tjenester» var avviket «gjerne på syv til åtte prosentpoeng i favør av
+postalutvalget», mens brukerne i det postale utvalget var mindre fornøyd med ungdomstrinnet og
+videregående skole (rapport 2023 s. 21). På «Trives du i Oslo?» svarte 83 prosent 5 eller 6 i
+det postale utvalget, mot 76 prosent i det digitale (rapport 2023 s. 20). Det er to utvalg i
+samme år, ikke en endring over tid. For tilgang til natur- og friluftsområder der man bor sier
+rapporten at det postale utvalget var mer fornøyd, uten å oppgi tall (s. 21). For trygghet ute
+på dagtid og kveldstid oppgir rapporten ingen slik sammenligning.
 
 Den sammenligningen har et forbehold. Utvalgene var ulike i alderssammensetning: i det postale
 utvalget var 46 prosent av dem som svarte på papir, over 60 år, mot 12,6 prosent av dem som

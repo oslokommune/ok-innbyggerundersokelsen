@@ -67,3 +67,58 @@ sporsmal:
         trivselsspørsmålet. Noen svar er i tillegg tomme.
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_der_du_bor
+    skjema_nr: "Q004"
+    ledd_nr: "3"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: null
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "91"}
+    merknad: null
+    datafil:
+      variabel: "Q004#3"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: null
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: natur_friluft_der_du_bor
+    skjema_nr: "Q007"
+    ledd_nr: "12"
+    seksjon: "Nå noen spørsmål om miljø"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: null
+    ledd_tekst: "Tilgang til natur- og friluftsområder der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "93"}
+    merknad: null
+    datafil:
+      variabel: "Q007#12"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996]
+      merknad: >-
+        Ubesvart er kodet 9996; i tillegg er noen få svar tomme.
+      kontrollert: true
+      kilde: {id: datafil, side: null}

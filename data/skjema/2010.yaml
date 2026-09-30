@@ -72,3 +72,65 @@ sporsmal:
         kan ikke skilles fra ubesvart.
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_der_du_bor
+    skjema_nr: "19"
+    ledd_nr: "5"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "Hvor fornøyd eller misfornøyd er du med. . ."
+      - "....der du bor"
+    instruksjon: null
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: skjema-2010, side: "5"}
+    merknad: null
+    datafil:
+      variabel: "Q19_5"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har
+        etikett i fila. Svar uten gyldig verdi er tomme. Variabelen er plassert etter rekkefølgen i skjemaet,
+        der blokken «der du bor» står etter blokken «i Oslo sentrum», og plasseringen er
+        bekreftet mot andelen som er publisert i rapporten for 2007.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: natur_friluft_der_du_bor
+    skjema_nr: "15"
+    ledd_nr: "2"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "NÆRMERE VURDERING AV BYDELEN OG OMRÅDET DER DU BOR. Hvor fornøyd/misfornøyd er du når det gjelder..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Tilgang til natur- og friluftsområder i bydelen"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: skjema-2010, side: "3"}
+    merknad: null
+    datafil:
+      variabel: "Q15_2"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har
+        etikett i fila. Svar uten gyldig verdi er tomme.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
