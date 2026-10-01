@@ -35,7 +35,8 @@ sporsmal:
       ikke_sikker_kode: 7
       manglende: [9996, tom]
       merknad: >-
-        9996 (na) er deklarert som manglende verdi i datafila. Noen få svar er i tillegg tomme.
+        Ubesvart er lagret med koden 9996 («na»), som er deklarert som manglende verdi i datafila;
+        det gjelder 124 av 28 851 svar, og 4 svar er tomme. 129 svarte «Ikke sikker» (kode 7).
       kontrollert: true
       kilde: {id: datafil, side: null}
   - konsept: trygghet_kveld_der_du_bor
@@ -63,8 +64,9 @@ sporsmal:
       ikke_sikker_kode: 7
       manglende: [9996, tom]
       merknad: >-
-        9996 (na) er ikke deklarert som manglende verdi i datafila, i motsetning til på
-        trivselsspørsmålet. Noen svar er i tillegg tomme.
+        Ubesvart er lagret med koden 9996 («na»); på dette spørsmålet er koden ikke deklarert som
+        manglende verdi i datafila, i motsetning til på trivselsspørsmålet. Det gjelder 348 av
+        28 851 svar, og 24 svar er tomme. 296 svarte «Ikke sikker» (kode 7).
       kontrollert: true
       kilde: {id: datafil, side: null}
   - konsept: trygghet_dag_der_du_bor
@@ -91,7 +93,9 @@ sporsmal:
       koder: [1, 2, 3, 4, 5, 6]
       ikke_sikker_kode: 7
       manglende: [9996, tom]
-      merknad: null
+      merknad: >-
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 223 av 28 851 svar, og 14 svar er
+        tomme. 89 svarte «Ikke sikker» (kode 7).
       kontrollert: true
       kilde: {id: datafil, side: null}
   - konsept: natur_friluft_der_du_bor
@@ -117,8 +121,9 @@ sporsmal:
       variabel: "Q007#12"
       koder: [1, 2, 3, 4, 5, 6]
       ikke_sikker_kode: 7
-      manglende: [9996]
+      manglende: [9996, tom]
       merknad: >-
-        Ubesvart er kodet 9996; i tillegg er noen få svar tomme.
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 321 av 28 851 svar, og 23 svar er
+        tomme. 173 svarte «Ikke sikker» (kode 7).
       kontrollert: true
       kilde: {id: datafil, side: null}

@@ -20,7 +20,7 @@ def test_genererte_filer_har_advarsel():
 def test_serieside_viser_dom_og_note():
     tekst = generer_docs.seriesporsmal()
     assert "#### 2018 → 2023: Med forbehold" in tekst
-    assert "Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet." in tekst
+    assert "Tall fra 2023 og senere bør sammenlignes med tidligere år med varsomhet." in tekst
 
 
 def test_koding_viser_ubesvart_per_utgave():

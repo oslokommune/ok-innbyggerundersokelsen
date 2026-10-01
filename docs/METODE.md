@@ -199,7 +199,7 @@ Spørreskjema: Metoderapport 2026, s. 15–39.
 
 | Felt | Verdi | Kilde |
 |---|---|---|
-| Målgruppe | Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget. | Metoderapport 2026, s. 1, 7 |
+| Målgruppe | Innbyggere i Oslo, 18 år og eldre. Avgrensningen fra 2023, der innvandrere med under fem års botid ikke var med, ble ikke videreført; metoderapporten omtaler det ikke, og opplysningen er fra oppdragsgiver. | Metoderapport 2026, s. 1, 7 |
 | Utvalgsramme | Folkeregisteret, med kontaktinformasjon fra Kontakt- og reservasjonsregisteret (KRR). Uttrekk ved Tietoevry. | Metoderapport 2026, s. 1 |
 | Utvalgsdesign | Sannsynlighetsutvalg: stratifisert, disproporsjonalt. Stratifisert etter bydel og landbakgrunn, justert etter svarprosenten i 2023. | Metoderapport 2026, s. 1–2 |
 | Innsamling | Bare nett. Personer som har reservert seg mot digital kommunikasjon fra det offentlige, fikk brev med QR-kode og kunne avtale telefonintervju. Svært få ønsket det. | Metoderapport 2026, s. 3 |

@@ -491,8 +491,9 @@ utgaver:
       kilde: {id: metoderapport-2026, side: "1"}
     malgruppe:
       beskrivelse: >-
-        Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort
-        botid var med i utvalget.
+        Innbyggere i Oslo, 18 år og eldre. Avgrensningen fra 2023, der innvandrere med under fem
+        års botid ikke var med, ble ikke videreført; metoderapporten omtaler det ikke, og
+        opplysningen er fra oppdragsgiver.
       alder_fra: 18
       alder_til: null
       kilde: {id: metoderapport-2026, side: "1, 7"}

@@ -37,7 +37,7 @@ i selve teksten («1 - I svært liten grad»).
 
 Konsept-id: `trives_oslo`. Hvor godt man trives i Oslo, på en skala fra 1 (i svært liten grad) til 6 (i svært stor grad).
 
-**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: ja · 2018 → 2023: med forbehold · 2023 → 2026: ja.
+**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: ja · 2018 → 2023: med forbehold · 2023 → 2026: med forbehold.
 
 ### Ordlyd per utgave
 
@@ -62,7 +62,7 @@ Konsept-id: `trives_oslo`. Hvor godt man trives i Oslo, på en skala fra 1 (i sv
 | 2010 | `Q12_1` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila, men forekommer ikke. Svar uten gyldig verdi er tomme, så «Ikke sikker» kan ikke skilles fra ubesvart. |
 | 2014 | `Q5_1` | 1–6 | 7 | tom | Kode −111 «[Ingen svar]» har etikett i fila, men brukes ikke. Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 20 svar per spørsmål, og regnes som manglende. |
 | 2018 | `Q001__1` | 1–6 | 7 | 8 | Kodene 7 (Ikke sikker) og 8 (na) er deklarert som brukerdefinerte manglende verdier i datafila. Programmer som ikke leser slike deklarasjoner, viser begge som tomme, og da forsvinner «Ikke sikker». |
-| 2023 | `Q001#1` | 1–6 | 7 | 9996 og tom | 9996 (na) er deklarert som manglende verdi i datafila. Noen få svar er i tillegg tomme. |
+| 2023 | `Q001#1` | 1–6 | 7 | 9996 og tom | Ubesvart er lagret med koden 9996 («na»), som er deklarert som manglende verdi i datafila; det gjelder 124 av 28 851 svar, og 4 svar er tomme. 129 svarte «Ikke sikker» (kode 7). |
 | 2026 | `Q001r1` | 1–6 | 98 | tom | – |
 
 ### Overgangene
@@ -141,7 +141,7 @@ Endret i metoden:
 
 Grunnlag: Rapport 2023, s. 4, 7, 12, 19–21. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
 
-#### 2023 → 2026: Ja
+#### 2023 → 2026: Med forbehold
 
 Endret i skjemaet:
 
@@ -152,25 +152,25 @@ Endret i skjemaet:
 
 Endret i metoden:
 
-- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget.
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Avgrensningen fra 2023, der innvandrere med under fem års botid ikke var med, ble ikke videreført; metoderapporten omtaler det ikke, og opplysningen er fra oppdragsgiver.
 - Leverandør: Kantar Public → Opinion
 - Svar per innsamlingsmodus: nett 98 %, papir 2 % → nett 100 %
 
-**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. I 2026 var undersøkelsen bare på nett, der 2023 hadde et lite postalt utvalg i tillegg; kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret, og vektingen ble gjort med celler og raking. Svarprosenten er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold. Innledningen står som «Hvilken grad:» i metoderapporten for 2026, uten «I»; se merknaden til spørreskjemaet for 2026.
+**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret. Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her. Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte. Innledningen står som «Hvilken grad:» i metoderapporten for 2026, uten «I»; se merknaden til spørreskjemaet for 2026.
 
-Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 15. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
+Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 15; Opplysning fra FIN 2026. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
 
 ### Standardmerknad til tabeller
 
 Denne teksten brukes som merknad når tall for spørsmålet publiseres i tabeller:
 
-> Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett. Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023 konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+> Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post, og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
 
 ## Trygghet ute på kveldstid der du bor
 
 Konsept-id: `trygghet_kveld_der_du_bor`. Hvor fornøyd man er med tryggheten når det gjelder å ferdes ute på kveldstid i området der man bor, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
 
-**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: ja.
+**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: med forbehold.
 
 ### Ordlyd per utgave
 
@@ -194,7 +194,7 @@ Konsept-id: `trygghet_kveld_der_du_bor`. Hvor fornøyd man er med tryggheten nå
 | 2010 | `Q19_6` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila, men forekommer ikke. Svar uten gyldig verdi er tomme, så «Ikke sikker» kan ikke skilles fra ubesvart. |
 | 2014 | `Q12_2` | 1–6 | 7 | tom | Kode −111 «[Ingen svar]» har etikett i fila, men brukes ikke. Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 20 svar per spørsmål, og regnes som manglende. |
 | 2018 | `Q007__4` | 1–6 | 7 | 8 | Kodene 7 (Ikke sikker) og 8 (na) er deklarert som brukerdefinerte manglende verdier i datafila. Programmer som ikke leser slike deklarasjoner, viser begge som tomme, og da forsvinner «Ikke sikker». |
-| 2023 | `Q004#4` | 1–6 | 7 | 9996 og tom | 9996 (na) er ikke deklarert som manglende verdi i datafila, i motsetning til på trivselsspørsmålet. Noen svar er i tillegg tomme. |
+| 2023 | `Q004#4` | 1–6 | 7 | 9996 og tom | Ubesvart er lagret med koden 9996 («na»); på dette spørsmålet er koden ikke deklarert som manglende verdi i datafila, i motsetning til på trivselsspørsmålet. Det gjelder 348 av 28 851 svar, og 24 svar er tomme. 296 svarte «Ikke sikker» (kode 7). |
 | 2026 | `Q004r4` | 1–6 | 98 | tom | – |
 
 ### Overgangene
@@ -273,7 +273,7 @@ Endret i metoden:
 
 Grunnlag: Rapport 2023, s. 4, 7, 12, 18, 21. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
 
-#### 2023 → 2026: Ja
+#### 2023 → 2026: Med forbehold
 
 Endret i skjemaet:
 
@@ -283,25 +283,25 @@ Endret i skjemaet:
 
 Endret i metoden:
 
-- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget.
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Avgrensningen fra 2023, der innvandrere med under fem års botid ikke var med, ble ikke videreført; metoderapporten omtaler det ikke, og opplysningen er fra oppdragsgiver.
 - Leverandør: Kantar Public → Opinion
 - Svar per innsamlingsmodus: nett 98 %, papir 2 % → nett 100 %
 
-**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold.
+**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret. Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her. Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte.
 
-Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 20. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
+Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 20; Opplysning fra FIN 2026. Vurdert av Byrådsavdeling for finans, Oslo kommune, 23. september 2026.
 
 ### Standardmerknad til tabeller
 
 Denne teksten brukes som merknad når tall for spørsmålet publiseres i tabeller:
 
-> Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett. Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023 konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+> Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post, og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
 
 ## Trygghet ute på dagtid der du bor
 
 Konsept-id: `trygghet_dag_der_du_bor`. Hvor fornøyd man er med tryggheten når det gjelder å ferdes ute på dagtid i området der man bor, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
 
-**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: ja.
+**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: med forbehold.
 
 ### Ordlyd per utgave
 
@@ -325,7 +325,7 @@ Konsept-id: `trygghet_dag_der_du_bor`. Hvor fornøyd man er med tryggheten når 
 | 2010 | `Q19_5` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila. Svar uten gyldig verdi er tomme. Variabelen er plassert etter rekkefølgen i skjemaet, der blokken «der du bor» står etter blokken «i Oslo sentrum», og plasseringen er bekreftet mot andelen som er publisert i rapporten for 2007. |
 | 2014 | `Q12_1` | 1–6 | 7 | tom | – |
 | 2018 | `Q007__3` | 1–6 | 7 | 8 | – |
-| 2023 | `Q004#3` | 1–6 | 7 | 9996 og tom | – |
+| 2023 | `Q004#3` | 1–6 | 7 | 9996 og tom | Ubesvart er lagret med koden 9996 («na»); det gjelder 223 av 28 851 svar, og 14 svar er tomme. 89 svarte «Ikke sikker» (kode 7). |
 | 2026 | `Q004r3` | 1–6 | 98 | tom | – |
 
 ### Overgangene
@@ -404,7 +404,7 @@ Endret i metoden:
 
 Grunnlag: Rapport 2023, s. 4, 7, 12, 18, 91. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
 
-#### 2023 → 2026: Ja
+#### 2023 → 2026: Med forbehold
 
 Endret i skjemaet:
 
@@ -414,25 +414,25 @@ Endret i skjemaet:
 
 Endret i metoden:
 
-- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget.
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Avgrensningen fra 2023, der innvandrere med under fem års botid ikke var med, ble ikke videreført; metoderapporten omtaler det ikke, og opplysningen er fra oppdragsgiver.
 - Leverandør: Kantar Public → Opinion
 - Svar per innsamlingsmodus: nett 98 %, papir 2 % → nett 100 %
 
-**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold.
+**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret. Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her. Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte.
 
-Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 20. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 20; Opplysning fra FIN 2026. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
 
 ### Standardmerknad til tabeller
 
 Denne teksten brukes som merknad når tall for spørsmålet publiseres i tabeller:
 
-> Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett. Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023 konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+> Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post, og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
 
 ## Tilgang til natur- og friluftsområder der du bor
 
 Konsept-id: `natur_friluft_der_du_bor`. Hvor fornøyd man er med tilgangen til natur- og friluftsområder i området der man bor, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
 
-**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: ja.
+**Serien:** 2007 → 2010: med forbehold · 2010 → 2014: med forbehold · 2014 → 2018: med forbehold · 2018 → 2023: med forbehold · 2023 → 2026: med forbehold.
 
 ### Ordlyd per utgave
 
@@ -456,7 +456,7 @@ Konsept-id: `natur_friluft_der_du_bor`. Hvor fornøyd man er med tilgangen til n
 | 2010 | `Q15_2` | 1–6 | 7 | tom | 2007 og 2010 ligger i én felles datafil. Kodene 7 (Ikke sikker) og 8 (Ubesvart) har etikett i fila. Svar uten gyldig verdi er tomme. |
 | 2014 | `Q7_1` | 1–6 | 7 | tom | Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 10 svar, og regnes som manglende. |
 | 2018 | `Q002__1` | 1–6 | 7 | 8 | Kodene 7 (Ikke sikker) og 8 (na) er deklarert som brukerdefinerte manglende verdier i datafila. Programmer som ikke leser slike deklarasjoner, viser begge som tomme, og da forsvinner «Ikke sikker». |
-| 2023 | `Q007#12` | 1–6 | 7 | 9996 | Ubesvart er kodet 9996; i tillegg er noen få svar tomme. |
+| 2023 | `Q007#12` | 1–6 | 7 | 9996 og tom | Ubesvart er lagret med koden 9996 («na»); det gjelder 321 av 28 851 svar, og 23 svar er tomme. 173 svarte «Ikke sikker» (kode 7). |
 | 2026 | `Q006r11` | 1–6 | 98 | tom | – |
 
 ### Overgangene
@@ -535,7 +535,7 @@ Endret i metoden:
 
 Grunnlag: Rapport 2023, s. 4, 7, 12, 18, 21, 47, 93. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
 
-#### 2023 → 2026: Ja
+#### 2023 → 2026: Med forbehold
 
 Endret i skjemaet:
 
@@ -545,16 +545,16 @@ Endret i skjemaet:
 
 Endret i metoden:
 
-- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Metoderapporten sier ikke om innvandrere med kort botid var med i utvalget.
+- Målgruppe: Innbyggere i Oslo, 18 år og eldre. Innvandrere med under fem års botid var ikke med i utvalget. → Innbyggere i Oslo, 18 år og eldre. Avgrensningen fra 2023, der innvandrere med under fem års botid ikke var med, ble ikke videreført; metoderapporten omtaler det ikke, og opplysningen er fra oppdragsgiver.
 - Leverandør: Kantar Public → Opinion
 - Svar per innsamlingsmodus: nett 98 %, papir 2 % → nett 100 %
 
-**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode. Spørsmålet står i batteriet om miljø begge år, foran leddet om Osloområdet generelt. Begge år var i hovedsak nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget. Samlet gir dette ikke grunn til forbehold.
+**Vurdering:** Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret. Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her. Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte. Spørsmålet står i batteriet om miljø begge år, foran leddet om Osloområdet generelt.
 
-Grunnlag: Rapport 2023, s. 4, 7, 12, 93; Metoderapport 2026, s. 1–4, 7, 21. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
+Grunnlag: Rapport 2023, s. 4, 7, 12; Metoderapport 2026, s. 1–4, 7, 21; Opplysning fra FIN 2026. Vurdert av Byrådsavdeling for finans, Oslo kommune, 30. september 2026.
 
 ### Standardmerknad til tabeller
 
 Denne teksten brukes som merknad når tall for spørsmålet publiseres i tabeller:
 
-> Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett. Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023 konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra 2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+> Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post, og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen

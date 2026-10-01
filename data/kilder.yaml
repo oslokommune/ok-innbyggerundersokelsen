@@ -70,6 +70,18 @@ kilder:
       Dokumentet kaller seg «Dokumentasjonsnotat» på første side, men er publisert som
       metoderapport. Spørreskjemaet står i vedlegg 3 (s. 15–39).
 
+  - id: fin-utvalg-2026
+    kortnavn: Opplysning fra FIN 2026
+    type: opplysning
+    tittel: Opplysning om utvalgstrekket i 2026
+    utgiver: Byrådsavdeling for finans, Oslo kommune
+    aar: 2026
+    tilgjengelig: ikke publisert; opplyst av oppdragsgiver september 2026
+    merknad: >-
+      Metoderapporten for 2026 sier ikke om innvandrere med under fem års botid var med i
+      utvalget. Byrådsavdeling for finans, som eier undersøkelsen, opplyser at avgrensningen
+      fra 2023 ikke ble videreført i 2026.
+
   - id: skjema-2007
     kortnavn: Spørreskjema 2007
     type: sporreskjema

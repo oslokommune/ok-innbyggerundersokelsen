@@ -15,12 +15,10 @@ konsepter:
     tema: Oslo som by å bo i
     koblinger: []
     note_til_tabell: >-
-      Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på
-      e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett.
-      Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023
-      konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra
-      2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og
-      sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
 
   - id: trygghet_kveld_der_du_bor
     navn: Trygghet ute på kveldstid der du bor
@@ -30,12 +28,10 @@ konsepter:
     tema: Trygghet
     koblinger: []
     note_til_tabell: >-
-      Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på
-      e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett.
-      Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023
-      konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra
-      2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og
-      sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
 
   - id: trygghet_dag_der_du_bor
     navn: Trygghet ute på dagtid der du bor
@@ -45,12 +41,10 @@ konsepter:
     tema: Trygghet
     koblinger: []
     note_til_tabell: >-
-      Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på
-      e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett.
-      Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023
-      konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra
-      2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og
-      sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
 
   - id: natur_friluft_der_du_bor
     navn: Tilgang til natur- og friluftsområder der du bor
@@ -60,9 +54,7 @@ konsepter:
     tema: Området der du bor
     koblinger: []
     note_til_tabell: >-
-      Fra 2023 ble undersøkelsen i hovedsak gjennomført som nettundersøkelse med invitasjon på
-      e-post. Tidligere ble spørreskjemaet sendt i posten, med mulighet for å svare på nett.
-      Fra 2023 ble utvalget også trukket og vektet etter landbakgrunn. Rapporten for 2023
-      konkluderer med at endringen kan ha påvirket resultatene, i begge retninger. Tall fra
-      2023 og senere bør derfor sammenlignes med tidligere år med varsomhet. Mer om metode og
-      sammenlignbarhet: https://github.com/oslokommune/ok-innbyggerundersokelsen
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen

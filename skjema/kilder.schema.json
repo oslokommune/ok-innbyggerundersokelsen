@@ -16,7 +16,7 @@
         "properties": {
           "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
           "kortnavn": {"type": "string"},
-          "type": {"enum": ["rapport", "sporreskjema", "datafil"]},
+          "type": {"enum": ["rapport", "sporreskjema", "datafil", "opplysning"]},
           "tittel": {"type": "string"},
           "utgiver": {"type": "string"},
           "aar": {"type": "integer"},

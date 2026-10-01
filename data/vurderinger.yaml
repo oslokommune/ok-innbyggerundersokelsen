@@ -87,20 +87,18 @@ vurderinger:
   - konsept: trives_oslo
     fra_utgave: "2023"
     til_utgave: "2026"
-    sammenlignbar: ja
+    sammenlignbar: med_forbehold
     begrunnelse: >-
-      Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med
-      invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren.
-      Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene. I 2026 var
-      undersøkelsen bare på nett, der 2023 hadde et lite postalt utvalg i tillegg;
-      kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret, og vektingen ble gjort
-      med celler og raking. Svarprosenten er regnet på en ny måte, men det endrer ikke hvem som
-      svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i
-      utvalget. Samlet gir dette ikke grunn til forbehold. Innledningen står som «Hvilken
-      grad:» i metoderapporten for 2026, uten «I»; se merknaden til spørreskjemaet for 2026.
+      Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse
+      med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var
+      undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret.
+      Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke
+      med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her.
+      Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte. Innledningen står som «Hvilken grad:» i metoderapporten for 2026, uten «I»; se merknaden til spørreskjemaet for 2026.
     grunnlag:
       - {id: rapport-2023, side: "4, 7, 12"}
       - {id: metoderapport-2026, side: "1–4, 7, 15"}
+      - {id: fin-utvalg-2026, side: null}
     besluttet_av: FIN
     dato: 2026-09-23
 
@@ -166,17 +164,18 @@ vurderinger:
   - konsept: trygghet_kveld_der_du_bor
     fra_utgave: "2023"
     til_utgave: "2026"
-    sammenlignbar: ja
+    sammenlignbar: med_forbehold
     begrunnelse: >-
-      Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med
-      invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren.
-      Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene.
-      Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte.
-      Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget.
-      Samlet gir dette ikke grunn til forbehold.
+      Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse
+      med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var
+      undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret.
+      Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke
+      med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her.
+      Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte.
     grunnlag:
       - {id: rapport-2023, side: "4, 7, 12"}
       - {id: metoderapport-2026, side: "1–4, 7, 20"}
+      - {id: fin-utvalg-2026, side: null}
     besluttet_av: FIN
     dato: 2026-09-23
 
@@ -244,17 +243,18 @@ vurderinger:
   - konsept: trygghet_dag_der_du_bor
     fra_utgave: "2023"
     til_utgave: "2026"
-    sammenlignbar: ja
+    sammenlignbar: med_forbehold
     begrunnelse: >-
-      Samme spørsmål og skala, og i hovedsak samme metode. Begge år var i hovedsak nettundersøkelser med
-      invitasjon på e-post, med utvalg og vekting etter landbakgrunn og feltarbeid om våren.
-      Endringene som gjorde overgangen til 2023 usikker, gjelder derfor begge årene.
-      Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som svarte.
-      Metoderapporten sier ikke om innvandrere med under fem års botid var med i utvalget.
-      Samlet gir dette ikke grunn til forbehold.
+      Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse
+      med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var
+      undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret.
+      Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke
+      med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her.
+      Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte.
     grunnlag:
       - {id: rapport-2023, side: "4, 7, 12"}
       - {id: metoderapport-2026, side: "1–4, 7, 20"}
+      - {id: fin-utvalg-2026, side: null}
     besluttet_av: FIN
     dato: 2026-09-30
 
@@ -331,17 +331,17 @@ vurderinger:
   - konsept: natur_friluft_der_du_bor
     fra_utgave: "2023"
     til_utgave: "2026"
-    sammenlignbar: ja
+    sammenlignbar: med_forbehold
     begrunnelse: >-
-      Samme spørsmål og skala, og i hovedsak samme metode. Spørsmålet står i batteriet om miljø
-      begge år, foran leddet om Osloområdet generelt. Begge år var i hovedsak
-      nettundersøkelser med invitasjon på e-post, med utvalg og vekting etter landbakgrunn og
-      feltarbeid om våren. Endringene som gjorde overgangen til 2023 usikker, gjelder derfor
-      begge årene. Svarprosenten i 2026 er regnet på en ny måte, men det endrer ikke hvem som
-      svarte. Metoderapporten sier ikke om innvandrere med under fem års botid var med i
-      utvalget. Samlet gir dette ikke grunn til forbehold.
+      Samme spørsmål og skala, og i hovedsak samme metode: begge år i hovedsak nettundersøkelse
+      med invitasjon på e-post, utvalg og vekting etter landbakgrunn, feltarbeid om våren. I 2026 var
+      undersøkelsen bare på nett, og kontaktinformasjonen kom fra Kontakt- og reservasjonsregisteret.
+      Populasjonen er likevel ikke den samme: i 2023 var innvandrere med under fem års botid ikke
+      med i utvalget, i 2026 var de med. Endringen gjelder alle spørsmål og vises derfor her.
+      Svarprosenten i 2026 er regnet på en annen måte, men det endrer ikke hvem som svarte. Spørsmålet står i batteriet om miljø begge år, foran leddet om Osloområdet generelt.
     grunnlag:
-      - {id: rapport-2023, side: "4, 7, 12, 93"}
+      - {id: rapport-2023, side: "4, 7, 12"}
       - {id: metoderapport-2026, side: "1–4, 7, 21"}
+      - {id: fin-utvalg-2026, side: null}
     besluttet_av: FIN
     dato: 2026-09-30

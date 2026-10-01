@@ -20,7 +20,7 @@ over tid. De største:
 | 2010 → 2014 | Ny målgruppe (18 år og eldre) og et kraftig forkortet skjema. Feltarbeidet flyttet fra høst til vinter |
 | 2014 → 2018 | Feltarbeidet flyttet fra vinter til vår. Andelen som svarte på nett økte fra 15 til 48 prosent, men rapporten sier at datainnsamlingsmetoden og vektingen var som før |
 | 2018 → 2023 | Omleggingen: fra papirskjema i posten til nettundersøkelse med invitasjon på e-post, utvalg og vekting etter landbakgrunn |
-| 2023 → 2026 | Bare nett, og en annen måte å regne svarprosent på |
+| 2023 → 2026 | Bare nett; innvandrere med under fem års botid igjen med i utvalget; svarprosenten regnet på en annen måte |
 
 Kilden til opplysninger om landbakgrunn har dessuten skiftet fra selvrapportert til register.
 Hva endringene betyr for hvert enkelt spørsmål, står i dommene i
@@ -78,6 +78,9 @@ sammenligning over tid må gjøres med varsomhet» (rapport 2023 s. 18).
   (metoderapport 2026 s. 3).
 - **Kontakt.** Utvalget ble trukket fra Folkeregisteret, med kontaktinformasjon fra Kontakt- og
   reservasjonsregisteret (KRR) (metoderapport 2026 s. 1).
+- **Målgruppe.** Avgrensningen fra 2023, der innvandrere med under fem års botid ikke var med i
+  utvalget, ble ikke videreført i 2026. Metoderapporten omtaler det ikke; opplysningen er fra
+  oppdragsgiver (opplysning fra FIN 2026). Populasjonen i 2026 er dermed nærmere 2018 enn 2023.
 - **Svarprosent.** Svarprosenten er regnet av alle utsendte, uten fratrekk for retur
   (metoderapport 2026 s. 3–4). Se neste avsnitt.
 
