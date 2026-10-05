@@ -514,7 +514,9 @@ utgaver:
         fikk brev med QR-kode og kunne avtale telefonintervju. Svært få ønsket det.
       modus:
         - {kode: SelfAdministeredQuestionnaire.CAWI, antall: 19555}
-      merknad: Antallet omfatter alle svar. Antallet telefonintervjuer er ikke oppgitt.
+      merknad: >-
+        Antallet omfatter alle svar. Antallet telefonintervjuer er ikke oppgitt, og heller ikke
+        hvor mange av dem som fikk brev, som svarte. Datafila har ingen variabel for invitasjonsvei.
       kilde: {id: metoderapport-2026, side: "3"}
     kontakt:
       beskrivelse: Forvarsel på SMS, invitasjon på e-post og to påminnelser (e-post og SMS).
@@ -525,7 +527,10 @@ utgaver:
     feltperiode:
       fra: 2026-04-23
       til: 2026-06-01
-      beskrivelse: null
+      beskrivelse: >-
+        Metoderapporten oppgir 1. juni som sluttdato. Leverandørens presentasjon 5. oktober 2026
+        og forsiden i leverandørens rapportverktøy oppgir 17. juni. Hvilken som er riktig, er
+        ikke avklart.
       arstid: vår
       kilde: {id: metoderapport-2026, side: "3"}
     svar:

@@ -203,10 +203,10 @@ Spørreskjema: Metoderapport 2026, s. 15–39.
 | Utvalgsramme | Folkeregisteret, med kontaktinformasjon fra Kontakt- og reservasjonsregisteret (KRR). Uttrekk ved Tietoevry. | Metoderapport 2026, s. 1 |
 | Utvalgsdesign | Sannsynlighetsutvalg: stratifisert, disproporsjonalt. Stratifisert etter bydel og landbakgrunn, justert etter svarprosenten i 2023. | Metoderapport 2026, s. 1–2 |
 | Innsamling | Bare nett. Personer som har reservert seg mot digital kommunikasjon fra det offentlige, fikk brev med QR-kode og kunne avtale telefonintervju. Svært få ønsket det. | Metoderapport 2026, s. 3 |
-| Svar per modus | nett: 19 555. Antallet omfatter alle svar. Antallet telefonintervjuer er ikke oppgitt. | Metoderapport 2026, s. 3 |
+| Svar per modus | nett: 19 555. Antallet omfatter alle svar. Antallet telefonintervjuer er ikke oppgitt, og heller ikke hvor mange av dem som fikk brev, som svarte. Datafila har ingen variabel for invitasjonsvei. | Metoderapport 2026, s. 3 |
 | Kontakt og påminnelser | Forvarsel på SMS, invitasjon på e-post og to påminnelser (e-post og SMS). | Metoderapport 2026, s. 3 |
 | Språk | Norsk, engelsk, polsk, urdu og somali. | Metoderapport 2026, s. 3 |
-| Feltperiode | 23. april 2026 – 1. juni 2026 (vår) | Metoderapport 2026, s. 3 |
+| Feltperiode | 23. april 2026 – 1. juni 2026 (vår). Metoderapporten oppgir 1. juni som sluttdato. Leverandørens presentasjon 5. oktober 2026 og forsiden i leverandørens rapportverktøy oppgir 17. juni. Hvilken som er riktig, er ikke avklart. | Metoderapport 2026, s. 3 |
 | Bruttoutvalg | 149 996 | Metoderapport 2026, s. 3–4 |
 | Nettoutvalg (antall svar) | 19 555 | Metoderapport 2026, s. 3–4 |
 | Svarprosent | 13,0 % | Metoderapport 2026, s. 3–4 |
