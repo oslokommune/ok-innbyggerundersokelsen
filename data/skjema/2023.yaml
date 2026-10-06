@@ -127,3 +127,148 @@ sporsmal:
         tomme. 173 svarte «Ikke sikker» (kode 7).
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: pent_der_du_bor
+    skjema_nr: "Q001"
+    ledd_nr: "5"
+    seksjon: "Først noen spørsmål om hvordan det oppleves å være innbygger i Oslo"
+    innledning: "I hvilken grad:"
+    instruksjon: null
+    ledd_tekst: "Er det pent i området der du bor?"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "87"}
+    merknad: null
+    datafil:
+      variabel: "Q001#5"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 336 av 28 851 svar, og 15 svar er
+        tomme. 43 svarte «Ikke sikker» (kode 7).
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: moteplasser_der_du_bor
+    skjema_nr: "Q001"
+    ledd_nr: "6"
+    seksjon: "Først noen spørsmål om hvordan det oppleves å være innbygger i Oslo"
+    innledning: "I hvilken grad:"
+    instruksjon: null
+    ledd_tekst: "Finnes det utendørs møteplasser som er fristende å bruke i området der du bor?"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "87"}
+    merknad: null
+    datafil:
+      variabel: "Q001#6"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 684 av 28 851 svar, og 23 svar er
+        tomme. 273 svarte «Ikke sikker» (kode 7).
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: nabofellesskap
+    skjema_nr: "Q001"
+    ledd_nr: "7"
+    seksjon: "Først noen spørsmål om hvordan det oppleves å være innbygger i Oslo"
+    innledning: "I hvilken grad:"
+    instruksjon: null
+    ledd_tekst: "Er du en del av et godt nabofellesskap?"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "87"}
+    merknad: null
+    datafil:
+      variabel: "Q001#7"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 280 av 28 851 svar, og færre enn
+        10 svar er tomme. 371 svarte «Ikke sikker» (kode 7).
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_sentrum
+    skjema_nr: "Q004"
+    ledd_nr: "1"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: null
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid i Oslo sentrum"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "91"}
+    merknad: null
+    datafil:
+      variabel: "Q004#1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 163 av 28 851 svar, og 13 svar er
+        tomme. 304 svarte «Ikke sikker» (kode 7).
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_kveld_sentrum
+    skjema_nr: "Q004"
+    ledd_nr: "2"
+    seksjon: "Nå noen spørsmål om trygghet"
+    innledning: "Hvor fornøyd/misfornøyd er du med:"
+    instruksjon: null
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på kveldstid i Oslo sentrum"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2023, side: "91"}
+    merknad: null
+    datafil:
+      variabel: "Q004#2"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: [9996, tom]
+      merknad: >-
+        Ubesvart er lagret med koden 9996 («na»); det gjelder 465 av 28 851 svar, og 24 svar er
+        tomme. 898 svarte «Ikke sikker» (kode 7).
+      kontrollert: true
+      kilde: {id: datafil, side: null}

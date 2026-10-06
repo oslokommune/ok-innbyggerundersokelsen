@@ -58,3 +58,68 @@ konsepter:
       og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
       sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
       https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+  - id: pent_der_du_bor
+    navn: Pent i området der du bor
+    beskrivelse: >-
+      I hvilken grad man synes det er pent i området der man bor, på en skala fra 1 (i svært
+      liten grad) til 6 (i svært stor grad).
+    tema: Området der du bor
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+  - id: moteplasser_der_du_bor
+    navn: Utendørs møteplasser der du bor
+    beskrivelse: >-
+      I hvilken grad man mener det finnes utendørs møteplasser som er fristende å bruke i
+      området der man bor, på en skala fra 1 (i svært liten grad) til 6 (i svært stor grad).
+    tema: Området der du bor
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+  - id: nabofellesskap
+    navn: Godt nabofellesskap
+    beskrivelse: >-
+      I hvilken grad man opplever å være en del av et godt nabofellesskap, på en skala fra 1 (i
+      svært liten grad) til 6 (i svært stor grad).
+    tema: Området der du bor
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+  - id: trygghet_dag_sentrum
+    navn: Trygghet ute på dagtid i Oslo sentrum
+    beskrivelse: >-
+      Hvor fornøyd man er med tryggheten når det gjelder å ferdes ute på dagtid i Oslo sentrum,
+      på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
+    tema: Trygghet
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen
+
+  - id: trygghet_kveld_sentrum
+    navn: Trygghet ute på kveldstid i Oslo sentrum
+    beskrivelse: >-
+      Hvor fornøyd man er med tryggheten når det gjelder å ferdes ute på kveldstid i Oslo
+      sentrum, på en skala fra 1 (svært misfornøyd) til 6 (svært fornøyd).
+    tema: Trygghet
+    koblinger: []
+    note_til_tabell: >-
+      Fra 2023 ble undersøkelsen lagt om: i hovedsak nettundersøkelse med invitasjon på e-post,
+      og utvalget ble trukket og vektet etter landbakgrunn. Tall fra 2023 og senere bør
+      sammenlignes med tidligere år med varsomhet. Mer om metode og sammenlignbarhet:
+      https://github.com/oslokommune/ok-innbyggerundersokelsen

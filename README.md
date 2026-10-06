@@ -25,10 +25,11 @@ Opplysningene har kilde, og der kilden er et dokument med sider, sidetall. Ordly
 av fra spørreskjemaene, ikke fra etikettene i datafilene, fordi etikettene kan være harmonisert
 og skjule endringer.
 
-Denne versjonen dokumenterer fire spørsmål over tid: «Trives du i Oslo?», trygghet når det
-gjelder å ferdes ute på kveldstid og på dagtid der man bor, og tilgangen til natur- og
-friluftsområder der man bor. Flere spørsmål legges til når de er kontrollert mot
-spørreskjemaene.
+Denne versjonen dokumenterer ni spørsmål over tid: «Trives du i Oslo?», trygghet når det
+gjelder å ferdes ute på dagtid og på kveldstid der man bor og i Oslo sentrum, tilgangen til
+natur- og friluftsområder der man bor, om det er pent og om det finnes fristende utendørs
+møteplasser i området der man bor, og om man er en del av et godt nabofellesskap. Flere
+spørsmål legges til når de er kontrollert mot spørreskjemaene.
 
 ## Hva som ikke er her
 

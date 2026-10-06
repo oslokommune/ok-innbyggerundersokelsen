@@ -128,3 +128,152 @@ sporsmal:
         manglende.
       kontrollert: true
       kilde: {id: datafil, side: null}
+  - konsept: pent_der_du_bor
+    skjema_nr: "6"
+    ledd_nr: "3"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "DIN VURDERING AV OMRÅDET DER DU BOR. I hvilken grad..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Er det pent i området der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "62"}
+    merknad: null
+    datafil:
+      variabel: "Q6_3"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 20 svar, og regnes som
+        manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: moteplasser_der_du_bor
+    skjema_nr: "6"
+    ledd_nr: "4"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "DIN VURDERING AV OMRÅDET DER DU BOR. I hvilken grad..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Finnes det utendørs møteplasser som er fristende å bruke i området der du bor"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "62"}
+    merknad: null
+    datafil:
+      variabel: "Q6_4"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 10 svar, og regnes som
+        manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: nabofellesskap
+    skjema_nr: "6"
+    ledd_nr: "5"
+    seksjon: "OSLO SOM BY Å BO I"
+    innledning: "DIN VURDERING AV OMRÅDET DER DU BOR. I hvilken grad..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Er du en del av et godt nabofelleskap"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "I svært liten grad"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "I svært stor grad"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "62"}
+    merknad: null
+    datafil:
+      variabel: "Q6_5"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 10 svar, og regnes som
+        manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_dag_sentrum
+    skjema_nr: "11"
+    ledd_nr: "1"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "..i Oslo sentrum"
+      - "Hvor fornøyd/misfornøyd er du med..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på dagtid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "64"}
+    merknad: null
+    datafil:
+      variabel: "Q11_1"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 20 svar, og regnes som
+        manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
+  - konsept: trygghet_kveld_sentrum
+    skjema_nr: "11"
+    ledd_nr: "2"
+    seksjon: "TRYGGHET OG KRIMINALITET"
+    innledning:
+      - "..i Oslo sentrum"
+      - "Hvor fornøyd/misfornøyd er du med..."
+    instruksjon: "Merk: Sett ett kryss på hver linje"
+    ledd_tekst: "Trygghet når det gjelder å ferdes ute på kveldstid"
+    svartype: skala
+    svaralternativer:
+      - {kode: 1, tekst: "Svært misfornøyd"}
+      - {kode: 2, tekst: null}
+      - {kode: 3, tekst: null}
+      - {kode: 4, tekst: null}
+      - {kode: 5, tekst: null}
+      - {kode: 6, tekst: "Svært fornøyd"}
+      - {kode: null, tekst: "Ikke sikker"}
+    filter: null
+    kilde: {id: rapport-2014, side: "64"}
+    merknad: null
+    datafil:
+      variabel: "Q11_2"
+      koder: [1, 2, 3, 4, 5, 6]
+      ikke_sikker_kode: 7
+      manglende: tom
+      merknad: >-
+        Ubesvart er tomt. En kode 0 uten etikett forekommer i færre enn 10 svar, og regnes som
+        manglende.
+      kontrollert: true
+      kilde: {id: datafil, side: null}
