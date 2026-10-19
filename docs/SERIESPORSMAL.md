@@ -929,7 +929,7 @@ Endret i metoden:
 - Svar per innsamlingsmodus: papir 52 %, nett 48 % → nett 98 %, papir 2 %
 - Vektet etter: kjønn, alder, bydel → kjønn, alder, bydel, landbakgrunn
 
-**Vurdering:** Omleggingen i 2023, som for trivsel. Ordlyden og skalaen er de samme, og feltarbeidet var om våren begge år. To nye ledd om tilhørighet til Oslo og til området der man bor kom inn i batteriet. Skrivemåten ble rettet fra «nabofelleskap» til «nabofellesskap». Rapporten for 2023 ber om varsomhet ved sammenligning over tid.
+**Vurdering:** Omleggingen i 2023, som for trivsel. Ordlyden og skalaen er de samme, og feltarbeidet var om våren begge år. To nye ledd om tilhørighet til Oslo og til området der man bor kom inn i batteriet. Skrivemåten ble rettet fra «nabofelleskap» til «nabofellesskap». Det endrer ikke spørsmålet. Rapporten for 2023 ber om varsomhet ved sammenligning over tid.
 
 Grunnlag: Rapport 2023, s. 4, 7, 12, 18, 87. Vurdert av Byrådsavdeling for finans, Oslo kommune, 5. oktober 2026.
 
@@ -1157,7 +1157,7 @@ Endret i metoden:
 - Årstid for feltarbeidet: høst → vinter
 - Kilde til landbakgrunn: ikke oppgitt → selvrapportert
 
-**Vurdering:** Ordlyden og skalaen er de samme, og linjene om politiets innsats står fortsatt i batteriet. Linjene om Oslo sentrum og om området der man bor ble skilt i to spørsmål med de samme linjene. Målgruppen ble endret fra 15 år og eldre til 18 år og eldre, så populasjonen er ikke den samme. Feltarbeidet flyttet fra høst til vinter.
+**Vurdering:** Ordlyden og skalaen er de samme, og linjene om politiets innsats står fortsatt i batteriet. Linjene om Oslo sentrum og om området der man bor ble skilt i to spørsmål med de samme linjene. Målgruppen ble endret fra 15 år og eldre til 18 år og eldre, så populasjonen er ikke den samme. Feltarbeidet flyttet fra høst til vinter; begge årstider har mørke kvelder.
 
 Grunnlag: Spørreskjema 2010, s. 5; Rapport 2010, s. 4; Rapport 2014, s. 3, 64. Vurdert av Byrådsavdeling for finans, Oslo kommune, 5. oktober 2026.
 
@@ -1175,7 +1175,7 @@ Endret i metoden:
 - Årstid for feltarbeidet: vinter → vår
 - Kilde til landbakgrunn: selvrapportert → register
 
-**Vurdering:** «i Oslo sentrum» ble flyttet fra en underoverskrift inn i linjeteksten, og linjene om politiets innsats ble tatt ut av batteriet. Meningen er den samme, men sammenhengen i skjemaet er en annen, som for trygghet der man bor. Feltarbeidet flyttet fra vinter (januar–mars) til vår (mars–mai).
+**Vurdering:** «i Oslo sentrum» ble flyttet fra en underoverskrift inn i linjeteksten, og linjene om politiets innsats ble tatt ut av batteriet. Meningen er den samme, men sammenhengen i skjemaet er en annen, som for trygghet der man bor. Feltarbeidet flyttet fra januar–mars til mars–mai, altså fra mørke til lysere kvelder. Hvilken betydning det har, er ikke målt.
 
 Grunnlag: Rapport 2014, s. 3, 64; Rapport 2018, s. 5, 115; Nettskjema 2018. Vurdert av Byrådsavdeling for finans, Oslo kommune, 5. oktober 2026.
 
